@@ -32,7 +32,7 @@ This attaches the helper to the game process and starts a signature scan for Scu
 If you just want `g_engine` and build your own raw pointer paths, you can use `vars.ScummVM.GEngine` as the base address, e.g.:
 
 ```c#
-  var dp = new DeepPointer(vars.ScummVM.GEngine, 0x50, 0x14);
+  var dp = new DeepPointer((IntPtr)vars.ScummVM.GEngine, 0x50, 0x14);
 ```
 
 ### Watch\<T>, Read\<T>, and offset resolution via field names
@@ -57,7 +57,7 @@ var arraySize = vars.ScummVM.Read<int>("_storage", "_mask");
 
 ### Updating the watchers
 
-To keep all watchers updated at all times, place this in `update {}`:
+To keep your watchers updated, place this in `update {}`:
 
 ```c#
 update {
@@ -72,8 +72,7 @@ update {
 
 ## Supported engines
 
+- Groovie
 - Mohawk_Myst
 - Mohawk_Riven
 - SCI
-- Sword
-- Toon
