@@ -2,7 +2,24 @@
 
 ScummVM-Help is a helper library which aims to facilitate the creation of ASL scripts for ScummVM games.
 
-Its main goal is to enable people to write ASLs that work across all versions of ScummVM, and to do so without needing multiple state descriptors and version checks, and without needing to perform tedious pointer scans.
+Its main goal is to enable people to write ASLs that work across all release versions of ScummVM, and to do so without needing multiple state descriptors and version checks, and without needing to perform tedious pointer scans.
+
+Currently, every release version from `2.0.0` onwards is supported:
+- `2.0.0` `32-bit`
+- `2.1.0` `32-bit` and `64-bit`
+- `2.1.1` `32-bit` and `64-bit`
+- `2.1.2` `32-bit` and `64-bit`
+- `2.2.0` `32-bit` and `64-bit`
+- `2.5.0` `32-bit` and `64-bit`
+- `2.5.1` `32-bit` and `64-bit`
+- `2.6.0` `32-bit` and `64-bit`
+- `2.6.1` `32-bit` and `64-bit`
+- `2.7.0` `32-bit` and `64-bit`
+- `2.7.1` `32-bit` and `64-bit`
+- `2.8.0` `32-bit` and `64-bit`
+- `2.8.1` `32-bit` and `64-bit`
+- `2.9.0` `32-bit` and `64-bit`
+- `2.9.1` `32-bit` and `64-bit`
 
 ## Usage
 
