@@ -22,7 +22,7 @@ public class ScummVM
     // Game process
     internal static volatile Process Game = null;
 
-    // ScummVM version
+    // ScummVM ver
     internal string version = null;
     internal bool is64Bit = true;
 
@@ -123,7 +123,7 @@ public class ScummVM
         var fileVersion = game.MainModule.FileVersionInfo.FileVersion;
         is64Bit = Game.Is64Bit();
 
-        var version = "";
+        var ver = "";
 
         if (fileVersion == "2.1.0git")
         {
@@ -146,11 +146,11 @@ public class ScummVM
 
             if (scanner.Scan(new SigScanTarget(0, mBytes)) != IntPtr.Zero)
             {
-                version = "Myst 25th Anniversary (32-bit)";
+                ver = "Myst 25th Anniversary (32-bit)";
             }
             else if (scanner.Scan(new SigScanTarget(0, rBytes)) != IntPtr.Zero)
             {
-                version = "Riven 25th Anniversary (32-bit)";
+                ver = "Riven 25th Anniversary (32-bit)";
             }
         }
         else if (fileVersion == "2.9.0")
@@ -167,19 +167,19 @@ public class ScummVM
 
             if (scanner.Scan(new SigScanTarget(0, vBytes)) != IntPtr.Zero)
             {
-                version = "Riven 25th Anniversary (64-bit)";
+                ver = "Riven 25th Anniversary (64-bit)";
             }
         }
         
-        if (version == "")
+        if (ver == "")
         {
-            version = fileVersion.ToString();
+            ver = fileVersion.ToString();
         }
         
-        Dbg.Info("  => Detected version " + version + " (" + (is64Bit ? "64" : "32") + "-bit)");
+        Dbg.Info("  => Detected version " + ver + " (" + (is64Bit ? "64" : "32") + "-bit)");
         Dbg.Info("");
 
-        return version;
+        return ver;
     }
 
     protected IntPtr GetEnginePointer(Process game)
@@ -492,11 +492,11 @@ public class ScummVM
                 {
                     while (!token.IsCancellationRequested && !loaded)
                     {
-                        var engine = is64Bit
+                        var g = is64Bit
                             ? Game.ReadValue<ulong>(g_engine)
                             : Game.ReadValue<uint>(g_engine);
 
-                        if (engine != 0)
+                        if (g != 0)
                         {
                             try
                             {
