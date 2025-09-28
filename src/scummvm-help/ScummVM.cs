@@ -502,7 +502,7 @@ public class ScummVM
                             try
                             {
                                 bool success = tryLoad!(this);
-                                Dbg.Info($"[ScummVM-Help] TryLoad returned {success}.");
+                                Dbg.Info($"TryLoad returned {success}.");
                                 if (success)
                                 {
                                     loaded = true;
@@ -511,12 +511,12 @@ public class ScummVM
                             }
                             catch (Exception ex)
                             {
-                                Dbg.Info($"[ScummVM-Help] TryLoad threw: {ex.GetType().Name}: {ex.Message}");
+                                Dbg.Info($"TryLoad threw: {ex.GetType().Name}: {ex.Message}");
                             }
                         }
                         else
                         {
-                            Dbg.Info("[ScummVM-Help] Waiting for game engine to be running...");
+                            Dbg.Info("Waiting for game engine to be running...");
                         }
 
                         try { await Task.Delay(3000, token); }
