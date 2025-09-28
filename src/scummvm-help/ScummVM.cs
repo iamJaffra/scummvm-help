@@ -469,6 +469,7 @@ public class ScummVM
         set
         {
             tryLoad = value;
+            loaded = false;
 
             try
             {
