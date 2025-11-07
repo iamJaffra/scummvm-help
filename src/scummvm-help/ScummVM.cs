@@ -25,6 +25,7 @@ public class ScummVM
     // ScummVM ver
     internal string version = null;
     internal bool is64Bit = true;
+    public string Version => version;
 
     // ASL script
     internal static dynamic script = null;
@@ -120,12 +121,13 @@ public class ScummVM
     {
         Dbg.Info("Determining ScummVM version...");
 
-        var fileVersion = game.MainModule.FileVersionInfo.FileVersion;
+        var info = game.MainModule.FileVersionInfo;
+        string fileVersion = info.FileMajorPart + "." + info.FileMinorPart + "." + info.FileBuildPart;
         is64Bit = Game.Is64Bit();
 
         var ver = "";
 
-        if (fileVersion == "2.1.0git")
+        if (fileVersion == "2.1.0")
         {
             byte[] mBytes = [
                 0x32, 0x2E, 0x31, 0x2E, 0x30, 0x67, 0x69, 0x74,
