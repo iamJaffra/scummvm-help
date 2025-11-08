@@ -17,18 +17,18 @@
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
     <OutputPath>lib\</OutputPath>
-	<CopyLocalLockFileAssemblies>false</CopyLocalLockFileAssemblies>
-	  <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
-	  <DefineConstants>DEBUG</DefineConstants>
+    <CopyLocalLockFileAssemblies>false</CopyLocalLockFileAssemblies>
+    <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    <DefineConstants>DEBUG</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <Optimize>true</Optimize>
     <OutputPath>lib\</OutputPath>
-	<CopyLocalLockFileAssemblies>false</CopyLocalLockFileAssemblies>
-	  <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
-	  <DefineConstants>DEBUG</DefineConstants>
+    <CopyLocalLockFileAssemblies>false</CopyLocalLockFileAssemblies>
+    <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    <DefineConstants>DEBUG</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
@@ -51,6 +51,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ByteArrayWatcher.cs" />
     <Compile Include="Dbg.cs" />
     <Compile Include="Engines.cs" />
     <Compile Include="ScummVM.cs" />

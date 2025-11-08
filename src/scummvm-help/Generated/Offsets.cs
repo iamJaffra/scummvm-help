@@ -54,7 +54,12 @@ namespace Generated
                             { "offset", "0x78" },
                             { "_myst", new Dictionary<string, object>
                                 {
-                                { "offset", "0x1C" }
+                                { "offset", "0x1C" },
+                                { "inline", "true" }
+                                } },
+                            { "_globals", new Dictionary<string, object>
+                                {
+                                { "offset", "0x0" }
                                 } }
                             } }
                         } },
@@ -151,12 +156,18 @@ namespace Generated
                             { "offset", "0x74" },
                             { "_myst", new Dictionary<string, object>
                                 {
-                                { "offset", "0x1C" }
+                                { "offset", "0x1C" },
+                                { "inline", "true" }
+                                } },
+                            { "_globals", new Dictionary<string, object>
+                                {
+                                { "offset", "0x0" }
                                 } }
                             } },
                         { "_stack", new Dictionary<string, object>
                             {
                             { "offset", "0x78" },
+                            { "inline", "true" },
                             { "_pointer", new Dictionary<string, object>
                                 {
                                 { "offset", "0x8" },
@@ -169,6 +180,7 @@ namespace Generated
                         { "_card", new Dictionary<string, object>
                             {
                             { "offset", "0xAC" },
+                            { "inline", "true" },
                             { "_pointer", new Dictionary<string, object>
                                 {
                                 { "offset", "0x8" },
@@ -272,12 +284,18 @@ namespace Generated
                             { "offset", "0x74" },
                             { "_myst", new Dictionary<string, object>
                                 {
-                                { "offset", "0x1C" }
+                                { "offset", "0x1C" },
+                                { "inline", "true" }
+                                } },
+                            { "_globals", new Dictionary<string, object>
+                                {
+                                { "offset", "0x0" }
                                 } }
                             } },
                         { "_stack", new Dictionary<string, object>
                             {
                             { "offset", "0x78" },
+                            { "inline", "true" },
                             { "_pointer", new Dictionary<string, object>
                                 {
                                 { "offset", "0x8" },
@@ -290,6 +308,7 @@ namespace Generated
                         { "_card", new Dictionary<string, object>
                             {
                             { "offset", "0xAC" },
+                            { "inline", "true" },
                             { "_pointer", new Dictionary<string, object>
                                 {
                                 { "offset", "0x8" },
@@ -393,12 +412,18 @@ namespace Generated
                             { "offset", "0x74" },
                             { "_myst", new Dictionary<string, object>
                                 {
-                                { "offset", "0x1C" }
+                                { "offset", "0x1C" },
+                                { "inline", "true" }
+                                } },
+                            { "_globals", new Dictionary<string, object>
+                                {
+                                { "offset", "0x0" }
                                 } }
                             } },
                         { "_stack", new Dictionary<string, object>
                             {
                             { "offset", "0x78" },
+                            { "inline", "true" },
                             { "_pointer", new Dictionary<string, object>
                                 {
                                 { "offset", "0x8" },
@@ -411,6 +436,7 @@ namespace Generated
                         { "_card", new Dictionary<string, object>
                             {
                             { "offset", "0xAC" },
+                            { "inline", "true" },
                             { "_pointer", new Dictionary<string, object>
                                 {
                                 { "offset", "0x8" },
@@ -514,12 +540,18 @@ namespace Generated
                             { "offset", "0x80" },
                             { "_myst", new Dictionary<string, object>
                                 {
-                                { "offset", "0x1C" }
+                                { "offset", "0x1C" },
+                                { "inline", "true" }
+                                } },
+                            { "_globals", new Dictionary<string, object>
+                                {
+                                { "offset", "0x0" }
                                 } }
                             } },
                         { "_stack", new Dictionary<string, object>
                             {
                             { "offset", "0x84" },
+                            { "inline", "true" },
                             { "_pointer", new Dictionary<string, object>
                                 {
                                 { "offset", "0x8" },
@@ -532,6 +564,7 @@ namespace Generated
                         { "_card", new Dictionary<string, object>
                             {
                             { "offset", "0xB8" },
+                            { "inline", "true" },
                             { "_pointer", new Dictionary<string, object>
                                 {
                                 { "offset", "0x8" },
@@ -635,12 +668,18 @@ namespace Generated
                             { "offset", "0x88" },
                             { "_myst", new Dictionary<string, object>
                                 {
-                                { "offset", "0x1C" }
+                                { "offset", "0x1C" },
+                                { "inline", "true" }
+                                } },
+                            { "_globals", new Dictionary<string, object>
+                                {
+                                { "offset", "0x0" }
                                 } }
                             } },
                         { "_stack", new Dictionary<string, object>
                             {
                             { "offset", "0x8C" },
+                            { "inline", "true" },
                             { "_pointer", new Dictionary<string, object>
                                 {
                                 { "offset", "0x8" },
@@ -653,6 +692,7 @@ namespace Generated
                         { "_card", new Dictionary<string, object>
                             {
                             { "offset", "0xB8" },
+                            { "inline", "true" },
                             { "_pointer", new Dictionary<string, object>
                                 {
                                 { "offset", "0x8" },
@@ -756,12 +796,18 @@ namespace Generated
                             { "offset", "0x88" },
                             { "_myst", new Dictionary<string, object>
                                 {
-                                { "offset", "0x1C" }
+                                { "offset", "0x1C" },
+                                { "inline", "true" }
+                                } },
+                            { "_globals", new Dictionary<string, object>
+                                {
+                                { "offset", "0x0" }
                                 } }
                             } },
                         { "_stack", new Dictionary<string, object>
                             {
                             { "offset", "0x8C" },
+                            { "inline", "true" },
                             { "_pointer", new Dictionary<string, object>
                                 {
                                 { "offset", "0x8" },
@@ -774,6 +820,7 @@ namespace Generated
                         { "_card", new Dictionary<string, object>
                             {
                             { "offset", "0xB8" },
+                            { "inline", "true" },
                             { "_pointer", new Dictionary<string, object>
                                 {
                                 { "offset", "0x8" },
@@ -877,12 +924,18 @@ namespace Generated
                             { "offset", "0x88" },
                             { "_myst", new Dictionary<string, object>
                                 {
-                                { "offset", "0x1C" }
+                                { "offset", "0x1C" },
+                                { "inline", "true" }
+                                } },
+                            { "_globals", new Dictionary<string, object>
+                                {
+                                { "offset", "0x0" }
                                 } }
                             } },
                         { "_stack", new Dictionary<string, object>
                             {
                             { "offset", "0x84" },
+                            { "inline", "true" },
                             { "_pointer", new Dictionary<string, object>
                                 {
                                 { "offset", "0x8" },
@@ -895,6 +948,7 @@ namespace Generated
                         { "_card", new Dictionary<string, object>
                             {
                             { "offset", "0xA8" },
+                            { "inline", "true" },
                             { "_pointer", new Dictionary<string, object>
                                 {
                                 { "offset", "0x8" },
@@ -998,12 +1052,18 @@ namespace Generated
                             { "offset", "0x88" },
                             { "_myst", new Dictionary<string, object>
                                 {
-                                { "offset", "0x1C" }
+                                { "offset", "0x1C" },
+                                { "inline", "true" }
+                                } },
+                            { "_globals", new Dictionary<string, object>
+                                {
+                                { "offset", "0x0" }
                                 } }
                             } },
                         { "_stack", new Dictionary<string, object>
                             {
                             { "offset", "0x84" },
+                            { "inline", "true" },
                             { "_pointer", new Dictionary<string, object>
                                 {
                                 { "offset", "0x8" },
@@ -1016,6 +1076,7 @@ namespace Generated
                         { "_card", new Dictionary<string, object>
                             {
                             { "offset", "0xA8" },
+                            { "inline", "true" },
                             { "_pointer", new Dictionary<string, object>
                                 {
                                 { "offset", "0x8" },
@@ -1119,12 +1180,18 @@ namespace Generated
                             { "offset", "0x88" },
                             { "_myst", new Dictionary<string, object>
                                 {
-                                { "offset", "0x1C" }
+                                { "offset", "0x1C" },
+                                { "inline", "true" }
+                                } },
+                            { "_globals", new Dictionary<string, object>
+                                {
+                                { "offset", "0x0" }
                                 } }
                             } },
                         { "_stack", new Dictionary<string, object>
                             {
                             { "offset", "0x84" },
+                            { "inline", "true" },
                             { "_pointer", new Dictionary<string, object>
                                 {
                                 { "offset", "0x8" },
@@ -1137,6 +1204,7 @@ namespace Generated
                         { "_card", new Dictionary<string, object>
                             {
                             { "offset", "0xA8" },
+                            { "inline", "true" },
                             { "_pointer", new Dictionary<string, object>
                                 {
                                 { "offset", "0x8" },
@@ -1240,12 +1308,18 @@ namespace Generated
                             { "offset", "0x88" },
                             { "_myst", new Dictionary<string, object>
                                 {
-                                { "offset", "0x1C" }
+                                { "offset", "0x1C" },
+                                { "inline", "true" }
+                                } },
+                            { "_globals", new Dictionary<string, object>
+                                {
+                                { "offset", "0x0" }
                                 } }
                             } },
                         { "_stack", new Dictionary<string, object>
                             {
                             { "offset", "0x84" },
+                            { "inline", "true" },
                             { "_pointer", new Dictionary<string, object>
                                 {
                                 { "offset", "0x8" },
@@ -1258,6 +1332,7 @@ namespace Generated
                         { "_card", new Dictionary<string, object>
                             {
                             { "offset", "0xA8" },
+                            { "inline", "true" },
                             { "_pointer", new Dictionary<string, object>
                                 {
                                 { "offset", "0x8" },
@@ -1361,12 +1436,18 @@ namespace Generated
                             { "offset", "0x88" },
                             { "_myst", new Dictionary<string, object>
                                 {
-                                { "offset", "0x1C" }
+                                { "offset", "0x1C" },
+                                { "inline", "true" }
+                                } },
+                            { "_globals", new Dictionary<string, object>
+                                {
+                                { "offset", "0x0" }
                                 } }
                             } },
                         { "_stack", new Dictionary<string, object>
                             {
                             { "offset", "0x84" },
+                            { "inline", "true" },
                             { "_pointer", new Dictionary<string, object>
                                 {
                                 { "offset", "0x8" },
@@ -1379,6 +1460,7 @@ namespace Generated
                         { "_card", new Dictionary<string, object>
                             {
                             { "offset", "0xA8" },
+                            { "inline", "true" },
                             { "_pointer", new Dictionary<string, object>
                                 {
                                 { "offset", "0x8" },
@@ -1482,12 +1564,18 @@ namespace Generated
                             { "offset", "0x88" },
                             { "_myst", new Dictionary<string, object>
                                 {
-                                { "offset", "0x1C" }
+                                { "offset", "0x1C" },
+                                { "inline", "true" }
+                                } },
+                            { "_globals", new Dictionary<string, object>
+                                {
+                                { "offset", "0x0" }
                                 } }
                             } },
                         { "_stack", new Dictionary<string, object>
                             {
                             { "offset", "0x84" },
+                            { "inline", "true" },
                             { "_pointer", new Dictionary<string, object>
                                 {
                                 { "offset", "0x8" },
@@ -1500,6 +1588,7 @@ namespace Generated
                         { "_card", new Dictionary<string, object>
                             {
                             { "offset", "0xA8" },
+                            { "inline", "true" },
                             { "_pointer", new Dictionary<string, object>
                                 {
                                 { "offset", "0x8" },
@@ -1603,12 +1692,18 @@ namespace Generated
                             { "offset", "0x8C" },
                             { "_myst", new Dictionary<string, object>
                                 {
-                                { "offset", "0x1C" }
+                                { "offset", "0x1C" },
+                                { "inline", "true" }
+                                } },
+                            { "_globals", new Dictionary<string, object>
+                                {
+                                { "offset", "0x0" }
                                 } }
                             } },
                         { "_stack", new Dictionary<string, object>
                             {
                             { "offset", "0x88" },
+                            { "inline", "true" },
                             { "_pointer", new Dictionary<string, object>
                                 {
                                 { "offset", "0x8" },
@@ -1621,6 +1716,7 @@ namespace Generated
                         { "_card", new Dictionary<string, object>
                             {
                             { "offset", "0xAC" },
+                            { "inline", "true" },
                             { "_pointer", new Dictionary<string, object>
                                 {
                                 { "offset", "0x8" },
@@ -1724,12 +1820,18 @@ namespace Generated
                             { "offset", "0x8C" },
                             { "_myst", new Dictionary<string, object>
                                 {
-                                { "offset", "0x1C" }
+                                { "offset", "0x1C" },
+                                { "inline", "true" }
+                                } },
+                            { "_globals", new Dictionary<string, object>
+                                {
+                                { "offset", "0x0" }
                                 } }
                             } },
                         { "_stack", new Dictionary<string, object>
                             {
                             { "offset", "0x88" },
+                            { "inline", "true" },
                             { "_pointer", new Dictionary<string, object>
                                 {
                                 { "offset", "0x8" },
@@ -1742,6 +1844,7 @@ namespace Generated
                         { "_card", new Dictionary<string, object>
                             {
                             { "offset", "0xAC" },
+                            { "inline", "true" },
                             { "_pointer", new Dictionary<string, object>
                                 {
                                 { "offset", "0x8" },
@@ -1826,12 +1929,18 @@ namespace Generated
                             { "offset", "0x74" },
                             { "_myst", new Dictionary<string, object>
                                 {
-                                { "offset", "0x1C" }
+                                { "offset", "0x1C" },
+                                { "inline", "true" }
+                                } },
+                            { "_globals", new Dictionary<string, object>
+                                {
+                                { "offset", "0x0" }
                                 } }
                             } },
                         { "_stack", new Dictionary<string, object>
                             {
                             { "offset", "0x78" },
+                            { "inline", "true" },
                             { "_pointer", new Dictionary<string, object>
                                 {
                                 { "offset", "0x8" },
@@ -1844,6 +1953,7 @@ namespace Generated
                         { "_card", new Dictionary<string, object>
                             {
                             { "offset", "0xAC" },
+                            { "inline", "true" },
                             { "_pointer", new Dictionary<string, object>
                                 {
                                 { "offset", "0x8" },
@@ -1941,12 +2051,18 @@ namespace Generated
                             { "offset", "0xB8" },
                             { "_myst", new Dictionary<string, object>
                                 {
-                                { "offset", "0x1C" }
+                                { "offset", "0x1C" },
+                                { "inline", "true" }
+                                } },
+                            { "_globals", new Dictionary<string, object>
+                                {
+                                { "offset", "0x0" }
                                 } }
                             } },
                         { "_stack", new Dictionary<string, object>
                             {
                             { "offset", "0xC0" },
+                            { "inline", "true" },
                             { "_pointer", new Dictionary<string, object>
                                 {
                                 { "offset", "0x10" },
@@ -1959,6 +2075,7 @@ namespace Generated
                         { "_card", new Dictionary<string, object>
                             {
                             { "offset", "0x120" },
+                            { "inline", "true" },
                             { "_pointer", new Dictionary<string, object>
                                 {
                                 { "offset", "0x10" },
@@ -2062,12 +2179,18 @@ namespace Generated
                             { "offset", "0xB8" },
                             { "_myst", new Dictionary<string, object>
                                 {
-                                { "offset", "0x1C" }
+                                { "offset", "0x1C" },
+                                { "inline", "true" }
+                                } },
+                            { "_globals", new Dictionary<string, object>
+                                {
+                                { "offset", "0x0" }
                                 } }
                             } },
                         { "_stack", new Dictionary<string, object>
                             {
                             { "offset", "0xC0" },
+                            { "inline", "true" },
                             { "_pointer", new Dictionary<string, object>
                                 {
                                 { "offset", "0x10" },
@@ -2080,6 +2203,7 @@ namespace Generated
                         { "_card", new Dictionary<string, object>
                             {
                             { "offset", "0x120" },
+                            { "inline", "true" },
                             { "_pointer", new Dictionary<string, object>
                                 {
                                 { "offset", "0x10" },
@@ -2183,12 +2307,18 @@ namespace Generated
                             { "offset", "0xB8" },
                             { "_myst", new Dictionary<string, object>
                                 {
-                                { "offset", "0x1C" }
+                                { "offset", "0x1C" },
+                                { "inline", "true" }
+                                } },
+                            { "_globals", new Dictionary<string, object>
+                                {
+                                { "offset", "0x0" }
                                 } }
                             } },
                         { "_stack", new Dictionary<string, object>
                             {
                             { "offset", "0xC0" },
+                            { "inline", "true" },
                             { "_pointer", new Dictionary<string, object>
                                 {
                                 { "offset", "0x10" },
@@ -2201,6 +2331,7 @@ namespace Generated
                         { "_card", new Dictionary<string, object>
                             {
                             { "offset", "0x120" },
+                            { "inline", "true" },
                             { "_pointer", new Dictionary<string, object>
                                 {
                                 { "offset", "0x10" },
@@ -2304,12 +2435,18 @@ namespace Generated
                             { "offset", "0xC8" },
                             { "_myst", new Dictionary<string, object>
                                 {
-                                { "offset", "0x1C" }
+                                { "offset", "0x1C" },
+                                { "inline", "true" }
+                                } },
+                            { "_globals", new Dictionary<string, object>
+                                {
+                                { "offset", "0x0" }
                                 } }
                             } },
                         { "_stack", new Dictionary<string, object>
                             {
                             { "offset", "0xD0" },
+                            { "inline", "true" },
                             { "_pointer", new Dictionary<string, object>
                                 {
                                 { "offset", "0x10" },
@@ -2322,6 +2459,7 @@ namespace Generated
                         { "_card", new Dictionary<string, object>
                             {
                             { "offset", "0x120" },
+                            { "inline", "true" },
                             { "_pointer", new Dictionary<string, object>
                                 {
                                 { "offset", "0x10" },
@@ -2425,12 +2563,18 @@ namespace Generated
                             { "offset", "0xD8" },
                             { "_myst", new Dictionary<string, object>
                                 {
-                                { "offset", "0x1C" }
+                                { "offset", "0x1C" },
+                                { "inline", "true" }
+                                } },
+                            { "_globals", new Dictionary<string, object>
+                                {
+                                { "offset", "0x0" }
                                 } }
                             } },
                         { "_stack", new Dictionary<string, object>
                             {
                             { "offset", "0xE0" },
+                            { "inline", "true" },
                             { "_pointer", new Dictionary<string, object>
                                 {
                                 { "offset", "0x10" },
@@ -2443,6 +2587,7 @@ namespace Generated
                         { "_card", new Dictionary<string, object>
                             {
                             { "offset", "0x130" },
+                            { "inline", "true" },
                             { "_pointer", new Dictionary<string, object>
                                 {
                                 { "offset", "0x10" },
@@ -2546,12 +2691,18 @@ namespace Generated
                             { "offset", "0xD8" },
                             { "_myst", new Dictionary<string, object>
                                 {
-                                { "offset", "0x1C" }
+                                { "offset", "0x1C" },
+                                { "inline", "true" }
+                                } },
+                            { "_globals", new Dictionary<string, object>
+                                {
+                                { "offset", "0x0" }
                                 } }
                             } },
                         { "_stack", new Dictionary<string, object>
                             {
                             { "offset", "0xE0" },
+                            { "inline", "true" },
                             { "_pointer", new Dictionary<string, object>
                                 {
                                 { "offset", "0x10" },
@@ -2564,6 +2715,7 @@ namespace Generated
                         { "_card", new Dictionary<string, object>
                             {
                             { "offset", "0x130" },
+                            { "inline", "true" },
                             { "_pointer", new Dictionary<string, object>
                                 {
                                 { "offset", "0x10" },
@@ -2667,12 +2819,18 @@ namespace Generated
                             { "offset", "0xD8" },
                             { "_myst", new Dictionary<string, object>
                                 {
-                                { "offset", "0x1C" }
+                                { "offset", "0x1C" },
+                                { "inline", "true" }
+                                } },
+                            { "_globals", new Dictionary<string, object>
+                                {
+                                { "offset", "0x0" }
                                 } }
                             } },
                         { "_stack", new Dictionary<string, object>
                             {
                             { "offset", "0xD0" },
+                            { "inline", "true" },
                             { "_pointer", new Dictionary<string, object>
                                 {
                                 { "offset", "0x10" },
@@ -2685,6 +2843,7 @@ namespace Generated
                         { "_card", new Dictionary<string, object>
                             {
                             { "offset", "0x110" },
+                            { "inline", "true" },
                             { "_pointer", new Dictionary<string, object>
                                 {
                                 { "offset", "0x10" },
@@ -2788,12 +2947,18 @@ namespace Generated
                             { "offset", "0xD8" },
                             { "_myst", new Dictionary<string, object>
                                 {
-                                { "offset", "0x1C" }
+                                { "offset", "0x1C" },
+                                { "inline", "true" }
+                                } },
+                            { "_globals", new Dictionary<string, object>
+                                {
+                                { "offset", "0x0" }
                                 } }
                             } },
                         { "_stack", new Dictionary<string, object>
                             {
                             { "offset", "0xD0" },
+                            { "inline", "true" },
                             { "_pointer", new Dictionary<string, object>
                                 {
                                 { "offset", "0x10" },
@@ -2806,6 +2971,7 @@ namespace Generated
                         { "_card", new Dictionary<string, object>
                             {
                             { "offset", "0x110" },
+                            { "inline", "true" },
                             { "_pointer", new Dictionary<string, object>
                                 {
                                 { "offset", "0x10" },
@@ -2909,12 +3075,18 @@ namespace Generated
                             { "offset", "0xD8" },
                             { "_myst", new Dictionary<string, object>
                                 {
-                                { "offset", "0x1C" }
+                                { "offset", "0x1C" },
+                                { "inline", "true" }
+                                } },
+                            { "_globals", new Dictionary<string, object>
+                                {
+                                { "offset", "0x0" }
                                 } }
                             } },
                         { "_stack", new Dictionary<string, object>
                             {
                             { "offset", "0xD0" },
+                            { "inline", "true" },
                             { "_pointer", new Dictionary<string, object>
                                 {
                                 { "offset", "0x10" },
@@ -2927,6 +3099,7 @@ namespace Generated
                         { "_card", new Dictionary<string, object>
                             {
                             { "offset", "0x110" },
+                            { "inline", "true" },
                             { "_pointer", new Dictionary<string, object>
                                 {
                                 { "offset", "0x10" },
@@ -3030,12 +3203,18 @@ namespace Generated
                             { "offset", "0xD8" },
                             { "_myst", new Dictionary<string, object>
                                 {
-                                { "offset", "0x1C" }
+                                { "offset", "0x1C" },
+                                { "inline", "true" }
+                                } },
+                            { "_globals", new Dictionary<string, object>
+                                {
+                                { "offset", "0x0" }
                                 } }
                             } },
                         { "_stack", new Dictionary<string, object>
                             {
                             { "offset", "0xD0" },
+                            { "inline", "true" },
                             { "_pointer", new Dictionary<string, object>
                                 {
                                 { "offset", "0x10" },
@@ -3048,6 +3227,7 @@ namespace Generated
                         { "_card", new Dictionary<string, object>
                             {
                             { "offset", "0x110" },
+                            { "inline", "true" },
                             { "_pointer", new Dictionary<string, object>
                                 {
                                 { "offset", "0x10" },
@@ -3151,12 +3331,18 @@ namespace Generated
                             { "offset", "0xD8" },
                             { "_myst", new Dictionary<string, object>
                                 {
-                                { "offset", "0x1C" }
+                                { "offset", "0x1C" },
+                                { "inline", "true" }
+                                } },
+                            { "_globals", new Dictionary<string, object>
+                                {
+                                { "offset", "0x0" }
                                 } }
                             } },
                         { "_stack", new Dictionary<string, object>
                             {
                             { "offset", "0xD0" },
+                            { "inline", "true" },
                             { "_pointer", new Dictionary<string, object>
                                 {
                                 { "offset", "0x10" },
@@ -3169,6 +3355,7 @@ namespace Generated
                         { "_card", new Dictionary<string, object>
                             {
                             { "offset", "0x110" },
+                            { "inline", "true" },
                             { "_pointer", new Dictionary<string, object>
                                 {
                                 { "offset", "0x10" },
@@ -3272,12 +3459,18 @@ namespace Generated
                             { "offset", "0xD8" },
                             { "_myst", new Dictionary<string, object>
                                 {
-                                { "offset", "0x1C" }
+                                { "offset", "0x1C" },
+                                { "inline", "true" }
+                                } },
+                            { "_globals", new Dictionary<string, object>
+                                {
+                                { "offset", "0x0" }
                                 } }
                             } },
                         { "_stack", new Dictionary<string, object>
                             {
                             { "offset", "0xD0" },
+                            { "inline", "true" },
                             { "_pointer", new Dictionary<string, object>
                                 {
                                 { "offset", "0x10" },
@@ -3290,6 +3483,7 @@ namespace Generated
                         { "_card", new Dictionary<string, object>
                             {
                             { "offset", "0x110" },
+                            { "inline", "true" },
                             { "_pointer", new Dictionary<string, object>
                                 {
                                 { "offset", "0x10" },
@@ -3393,12 +3587,18 @@ namespace Generated
                             { "offset", "0xE0" },
                             { "_myst", new Dictionary<string, object>
                                 {
-                                { "offset", "0x1C" }
+                                { "offset", "0x1C" },
+                                { "inline", "true" }
+                                } },
+                            { "_globals", new Dictionary<string, object>
+                                {
+                                { "offset", "0x0" }
                                 } }
                             } },
                         { "_stack", new Dictionary<string, object>
                             {
                             { "offset", "0xD8" },
+                            { "inline", "true" },
                             { "_pointer", new Dictionary<string, object>
                                 {
                                 { "offset", "0x10" },
@@ -3411,6 +3611,7 @@ namespace Generated
                         { "_card", new Dictionary<string, object>
                             {
                             { "offset", "0x118" },
+                            { "inline", "true" },
                             { "_pointer", new Dictionary<string, object>
                                 {
                                 { "offset", "0x10" },
@@ -3514,12 +3715,18 @@ namespace Generated
                             { "offset", "0xE0" },
                             { "_myst", new Dictionary<string, object>
                                 {
-                                { "offset", "0x1C" }
+                                { "offset", "0x1C" },
+                                { "inline", "true" }
+                                } },
+                            { "_globals", new Dictionary<string, object>
+                                {
+                                { "offset", "0x0" }
                                 } }
                             } },
                         { "_stack", new Dictionary<string, object>
                             {
                             { "offset", "0xD8" },
+                            { "inline", "true" },
                             { "_pointer", new Dictionary<string, object>
                                 {
                                 { "offset", "0x10" },
@@ -3532,6 +3739,7 @@ namespace Generated
                         { "_card", new Dictionary<string, object>
                             {
                             { "offset", "0x118" },
+                            { "inline", "true" },
                             { "_pointer", new Dictionary<string, object>
                                 {
                                 { "offset", "0x10" },
@@ -3616,12 +3824,18 @@ namespace Generated
                             { "offset", "0xE0" },
                             { "_myst", new Dictionary<string, object>
                                 {
-                                { "offset", "0x1C" }
+                                { "offset", "0x1C" },
+                                { "inline", "true" }
+                                } },
+                            { "_globals", new Dictionary<string, object>
+                                {
+                                { "offset", "0x0" }
                                 } }
                             } },
                         { "_stack", new Dictionary<string, object>
                             {
                             { "offset", "0xD8" },
+                            { "inline", "true" },
                             { "_pointer", new Dictionary<string, object>
                                 {
                                 { "offset", "0x10" },
@@ -3634,6 +3848,7 @@ namespace Generated
                         { "_card", new Dictionary<string, object>
                             {
                             { "offset", "0x118" },
+                            { "inline", "true" },
                             { "_pointer", new Dictionary<string, object>
                                 {
                                 { "offset", "0x10" },

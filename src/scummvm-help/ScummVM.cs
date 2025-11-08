@@ -9,6 +9,7 @@ using LiveSplit.Model;
 using System.Threading.Tasks;
 using System.Threading;
 using Generated;
+using LiveSplit.CustomWatchers;
 
 public class ScummVM
 {
@@ -237,7 +238,7 @@ public class ScummVM
 
                                 Dbg.Info($"  => g_engine found at 0x{g_engineAddr:X}");
                                 Dbg.Info();
-                                Dbg.Info("  => Set g_engine pointer to vars.ScummVM.GEngine");
+                                Dbg.Info("  => Assigned g_engine pointer to vars.ScummVM.GEngine");
                                 Dbg.Info();
 
                                 return (IntPtr)g_engineAddr;
@@ -269,6 +270,9 @@ public class ScummVM
                             int g_engineAddr = game.ReadValue<int>((IntPtr)addr + 2);
 
                             Dbg.Info("  => g_engine found at 0x" + g_engineAddr.ToString("X"));
+                            Dbg.Info();
+                            Dbg.Info("  => Assigned g_engine pointer to vars.ScummVM.GEngine");
+                            Dbg.Info();
 
                             return (IntPtr)g_engineAddr;
                         }
@@ -335,6 +339,12 @@ public class ScummVM
     {
         int[] offsets = ResolvePath(path);
         return new MemoryWatcher<T>(new DeepPointer(g_engine, offsets));
+    }
+
+    public MemoryWatcher WatchBytes(int length, params object[] path)
+    {
+        int[] offsets = ResolvePath(path);
+        return new ByteArrayWatcher(new DeepPointer(g_engine, offsets), length);
     }
 
     public T Read<T>(params object[] path) where T : unmanaged
@@ -414,7 +424,9 @@ public class ScummVM
             }
         }
 
-        return derefOffsets.ToArray();
+        var offsets = derefOffsets.ToArray();
+        Dbg.Info($"Resolved path: 0x{GEngine.ToString("X")}, " + string.Join(", ", offsets.Select(n => $"0x{n:X}")));
+        return offsets;
     }
 
     private static int ParseOffset(string raw)

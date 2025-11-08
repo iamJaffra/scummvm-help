@@ -23,6 +23,9 @@ scummvm:
           offset: 0x78
           _myst:
             offset: 0x1C
+            inline: true
+          _globals:
+            offset: 0x0
       mohawk_riven:
         _video:
           offset: 0x64
@@ -70,14 +73,19 @@ scummvm:
           offset: 0x74
           _myst:
             offset: 0x1C
+            inline: true
+          _globals:
+            offset: 0x0
         _stack:
           offset: 0x78
+          inline: true
           _pointer:
             offset: 0x8
             _stackId:
               offset: 0x2C
         _card:
           offset: 0xAC
+          inline: true
           _pointer:
             offset: 0x8
             _id:
@@ -129,14 +137,19 @@ scummvm:
           offset: 0x74
           _myst:
             offset: 0x1C
+            inline: true
+          _globals:
+            offset: 0x0
         _stack:
           offset: 0x78
+          inline: true
           _pointer:
             offset: 0x8
             _stackId:
               offset: 0x2C
         _card:
           offset: 0xAC
+          inline: true
           _pointer:
             offset: 0x8
             _id:
@@ -188,14 +201,19 @@ scummvm:
           offset: 0x74
           _myst:
             offset: 0x1C
+            inline: true
+          _globals:
+            offset: 0x0
         _stack:
           offset: 0x78
+          inline: true
           _pointer:
             offset: 0x8
             _stackId:
               offset: 0x2C
         _card:
           offset: 0xAC
+          inline: true
           _pointer:
             offset: 0x8
             _id:
@@ -247,14 +265,19 @@ scummvm:
           offset: 0x80
           _myst:
             offset: 0x1C
+            inline: true
+          _globals:
+            offset: 0x0
         _stack:
           offset: 0x84
+          inline: true
           _pointer:
             offset: 0x8
             _stackId:
               offset: 0x2C
         _card:
           offset: 0xB8
+          inline: true
           _pointer:
             offset: 0x8
             _id:
@@ -306,14 +329,19 @@ scummvm:
           offset: 0x88
           _myst:
             offset: 0x1C
+            inline: true
+          _globals:
+            offset: 0x0
         _stack:
           offset: 0x8C
+          inline: true
           _pointer:
             offset: 0x8
             _stackId:
               offset: 0x2C
         _card:
           offset: 0xB8
+          inline: true
           _pointer:
             offset: 0x8
             _id:
@@ -365,14 +393,19 @@ scummvm:
           offset: 0x88
           _myst:
             offset: 0x1C
+            inline: true
+          _globals:
+            offset: 0x0
         _stack:
           offset: 0x8C
+          inline: true
           _pointer:
             offset: 0x8
             _stackId:
               offset: 0x2C
         _card:
           offset: 0xB8
+          inline: true
           _pointer:
             offset: 0x8
             _id:
@@ -424,14 +457,19 @@ scummvm:
           offset: 0x88
           _myst:
             offset: 0x1C
+            inline: true
+          _globals:
+            offset: 0x0
         _stack:
           offset: 0x84
+          inline: true
           _pointer:
             offset: 0x8
             _stackId:
               offset: 0x2C
         _card:
           offset: 0xA8
+          inline: true
           _pointer:
             offset: 0x8
             _id:
@@ -483,14 +521,19 @@ scummvm:
           offset: 0x88
           _myst:
             offset: 0x1C
+            inline: true
+          _globals:
+            offset: 0x0
         _stack:
           offset: 0x84
+          inline: true
           _pointer:
             offset: 0x8
             _stackId:
               offset: 0x2C
         _card:
           offset: 0xA8
+          inline: true
           _pointer:
             offset: 0x8
             _id:
@@ -542,14 +585,19 @@ scummvm:
           offset: 0x88
           _myst:
             offset: 0x1C
+            inline: true
+          _globals:
+            offset: 0x0
         _stack:
           offset: 0x84
+          inline: true
           _pointer:
             offset: 0x8
             _stackId:
               offset: 0x2C
         _card:
           offset: 0xA8
+          inline: true
           _pointer:
             offset: 0x8
             _id:
@@ -601,14 +649,19 @@ scummvm:
           offset: 0x88
           _myst:
             offset: 0x1C
+            inline: true
+          _globals:
+            offset: 0x0
         _stack:
           offset: 0x84
+          inline: true
           _pointer:
             offset: 0x8
             _stackId:
               offset: 0x2C
         _card:
           offset: 0xA8
+          inline: true
           _pointer:
             offset: 0x8
             _id:
@@ -660,14 +713,19 @@ scummvm:
           offset: 0x88
           _myst:
             offset: 0x1C
+            inline: true
+          _globals:
+            offset: 0x0
         _stack:
           offset: 0x84
+          inline: true
           _pointer:
             offset: 0x8
             _stackId:
               offset: 0x2C
         _card:
           offset: 0xA8
+          inline: true
           _pointer:
             offset: 0x8
             _id:
@@ -719,14 +777,19 @@ scummvm:
           offset: 0x88
           _myst:
             offset: 0x1C
+            inline: true
+          _globals:
+            offset: 0x0
         _stack:
           offset: 0x84
+          inline: true
           _pointer:
             offset: 0x8
             _stackId:
               offset: 0x2C
         _card:
           offset: 0xA8
+          inline: true
           _pointer:
             offset: 0x8
             _id:
@@ -778,14 +841,19 @@ scummvm:
           offset: 0x8C
           _myst:
             offset: 0x1C
+            inline: true
+          _globals:
+            offset: 0x0
         _stack:
           offset: 0x88
+          inline: true
           _pointer:
             offset: 0x8
             _stackId:
               offset: 0x2C
         _card:
           offset: 0xAC
+          inline: true
           _pointer:
             offset: 0x8
             _id:
@@ -837,14 +905,19 @@ scummvm:
           offset: 0x8C
           _myst:
             offset: 0x1C
+            inline: true
+          _globals:
+            offset: 0x0
         _stack:
           offset: 0x88
+          inline: true
           _pointer:
             offset: 0x8
             _stackId:
               offset: 0x2C
         _card:
           offset: 0xAC
+          inline: true
           _pointer:
             offset: 0x8
             _id:
@@ -887,14 +960,19 @@ scummvm:
           offset: 0x74
           _myst:
             offset: 0x1C
+            inline: true
+          _globals:
+            offset: 0x0
         _stack:
           offset: 0x78
+          inline: true
           _pointer:
             offset: 0x8
             _stackId:
               offset: 0x2C
         _card:
           offset: 0xAC
+          inline: true
           _pointer:
             offset: 0x8
             _id:
@@ -942,14 +1020,19 @@ scummvm:
           offset: 0xB8
           _myst:
             offset: 0x1C
+            inline: true
+          _globals:
+            offset: 0x0
         _stack:
           offset: 0xC0
+          inline: true
           _pointer:
             offset: 0x10
             _stackId:
               offset: 0x44
         _card:
           offset: 0x120
+          inline: true
           _pointer:
             offset: 0x10
             _id:
@@ -1001,14 +1084,19 @@ scummvm:
           offset: 0xB8
           _myst:
             offset: 0x1C
+            inline: true
+          _globals:
+            offset: 0x0
         _stack:
           offset: 0xC0
+          inline: true
           _pointer:
             offset: 0x10
             _stackId:
               offset: 0x44
         _card:
           offset: 0x120
+          inline: true
           _pointer:
             offset: 0x10
             _id:
@@ -1060,14 +1148,19 @@ scummvm:
           offset: 0xB8
           _myst:
             offset: 0x1C
+            inline: true
+          _globals:
+            offset: 0x0
         _stack:
           offset: 0xC0
+          inline: true
           _pointer:
             offset: 0x10
             _stackId:
               offset: 0x44
         _card:
           offset: 0x120
+          inline: true
           _pointer:
             offset: 0x10
             _id:
@@ -1119,14 +1212,19 @@ scummvm:
           offset: 0xC8
           _myst:
             offset: 0x1C
+            inline: true
+          _globals:
+            offset: 0x0
         _stack:
           offset: 0xD0
+          inline: true
           _pointer:
             offset: 0x10
             _stackId:
               offset: 0x44
         _card:
           offset: 0x120
+          inline: true
           _pointer:
             offset: 0x10
             _id:
@@ -1178,14 +1276,19 @@ scummvm:
           offset: 0xD8
           _myst:
             offset: 0x1C
+            inline: true
+          _globals:
+            offset: 0x0
         _stack:
           offset: 0xE0
+          inline: true
           _pointer:
             offset: 0x10
             _stackId:
               offset: 0x44
         _card:
           offset: 0x130
+          inline: true
           _pointer:
             offset: 0x10
             _id:
@@ -1237,14 +1340,19 @@ scummvm:
           offset: 0xD8
           _myst:
             offset: 0x1C
+            inline: true
+          _globals:
+            offset: 0x0
         _stack:
           offset: 0xE0
+          inline: true
           _pointer:
             offset: 0x10
             _stackId:
               offset: 0x44
         _card:
           offset: 0x130
+          inline: true
           _pointer:
             offset: 0x10
             _id:
@@ -1296,14 +1404,19 @@ scummvm:
           offset: 0xD8
           _myst:
             offset: 0x1C
+            inline: true
+          _globals:
+            offset: 0x0
         _stack:
           offset: 0xD0
+          inline: true
           _pointer:
             offset: 0x10
             _stackId:
               offset: 0x44
         _card:
           offset: 0x110
+          inline: true
           _pointer:
             offset: 0x10
             _id:
@@ -1355,14 +1468,19 @@ scummvm:
           offset: 0xD8
           _myst:
             offset: 0x1C
+            inline: true
+          _globals:
+            offset: 0x0
         _stack:
           offset: 0xD0
+          inline: true
           _pointer:
             offset: 0x10
             _stackId:
               offset: 0x44
         _card:
           offset: 0x110
+          inline: true
           _pointer:
             offset: 0x10
             _id:
@@ -1414,14 +1532,19 @@ scummvm:
           offset: 0xD8
           _myst:
             offset: 0x1C
+            inline: true
+          _globals:
+            offset: 0x0
         _stack:
           offset: 0xD0
+          inline: true
           _pointer:
             offset: 0x10
             _stackId:
               offset: 0x44
         _card:
           offset: 0x110
+          inline: true
           _pointer:
             offset: 0x10
             _id:
@@ -1473,14 +1596,19 @@ scummvm:
           offset: 0xD8
           _myst:
             offset: 0x1C
+            inline: true
+          _globals:
+            offset: 0x0
         _stack:
           offset: 0xD0
+          inline: true
           _pointer:
             offset: 0x10
             _stackId:
               offset: 0x44
         _card:
           offset: 0x110
+          inline: true
           _pointer:
             offset: 0x10
             _id:
@@ -1532,14 +1660,19 @@ scummvm:
           offset: 0xD8
           _myst:
             offset: 0x1C
+            inline: true
+          _globals:
+            offset: 0x0
         _stack:
           offset: 0xD0
+          inline: true
           _pointer:
             offset: 0x10
             _stackId:
               offset: 0x44
         _card:
           offset: 0x110
+          inline: true
           _pointer:
             offset: 0x10
             _id:
@@ -1591,14 +1724,19 @@ scummvm:
           offset: 0xD8
           _myst:
             offset: 0x1C
+            inline: true
+          _globals:
+            offset: 0x0
         _stack:
           offset: 0xD0
+          inline: true
           _pointer:
             offset: 0x10
             _stackId:
               offset: 0x44
         _card:
           offset: 0x110
+          inline: true
           _pointer:
             offset: 0x10
             _id:
@@ -1650,14 +1788,19 @@ scummvm:
           offset: 0xE0
           _myst:
             offset: 0x1C
+            inline: true
+          _globals:
+            offset: 0x0
         _stack:
           offset: 0xD8
+          inline: true
           _pointer:
             offset: 0x10
             _stackId:
               offset: 0x44
         _card:
           offset: 0x118
+          inline: true
           _pointer:
             offset: 0x10
             _id:
@@ -1709,14 +1852,19 @@ scummvm:
           offset: 0xE0
           _myst:
             offset: 0x1C
+            inline: true
+          _globals:
+            offset: 0x0
         _stack:
           offset: 0xD8
+          inline: true
           _pointer:
             offset: 0x10
             _stackId:
               offset: 0x44
         _card:
           offset: 0x118
+          inline: true
           _pointer:
             offset: 0x10
             _id:
@@ -1759,14 +1907,19 @@ scummvm:
           offset: 0xE0
           _myst:
             offset: 0x1C
+            inline: true
+          _globals:
+            offset: 0x0
         _stack:
           offset: 0xD8
+          inline: true
           _pointer:
             offset: 0x10
             _stackId:
               offset: 0x44
         _card:
           offset: 0x118
+          inline: true
           _pointer:
             offset: 0x10
             _id:
