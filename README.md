@@ -84,9 +84,13 @@ update {
 
 ## Example ASLs
 
-- [Torin's Passage](https://raw.githubusercontent.com/iamJaffra/ASLs/refs/heads/main/TorinsPassage.asl)
+##### Mohawk
+- [Myst](https://raw.githubusercontent.com/iamJaffra/ASLs/refs/heads/main/Myst.asl)
 - [Riven](https://raw.githubusercontent.com/iamJaffra/ASLs/refs/heads/main/Riven.asl)
-
+##### SCI
+- [Shivers](https://raw.githubusercontent.com/iamJaffra/ASLs/refs/heads/main/Shivers.asl)
+- [Torin's Passage](https://raw.githubusercontent.com/iamJaffra/ASLs/refs/heads/main/TorinsPassage.asl)
+  
 ## Supported engines (work in progress)
 
 - Groovie
