@@ -72,9 +72,7 @@ For example:
 vars.myWatcher = vars.ScummVM.Watch<ushort>("_card", "_id");
 ```
 
-Now, `vars.myWatcher` is a `MemoryWatcher` watching the value at the address gotten to via `g_engine -> _card -> _id`.
-
-*(Note: The engine you specify when loading the helper is what tells the library which offsets to use to resolve the path.)*
+Now, `vars.myWatcher` is a `MemoryWatcher` watching the value at the address reached via `g_engine -> _card -> _id`.
 
 #### Read\<T>
 
@@ -137,3 +135,4 @@ The following debug flags exist (set them in `startup{}`):
 - Mohawk_Myst
 - Mohawk_Riven
 - SCI
+- Scumm (forthcoming)
