@@ -46,6 +46,7 @@ scummvm:
               offset: 0x4
             _value:
               offset: 0x20
+              inline: true
           _mask:
             offset: 0x184
       sci:
@@ -54,6 +55,48 @@ scummvm:
           variables:
             offset: 0x88
             inline: true
+          _segMan:
+            offset: 0x4
+            _heap:
+              offset: 0x4
+              inline: true
+              _capacity:
+                offset: 0x0
+              _storage:
+                offset: 0x8
+                _type:
+                  offset: 0x4
+                _nr:
+                  offset: 0x8
+                _localsBlock:
+                  offset: 0x104
+                  _locals:
+                    offset: 0xC
+                    inline: true
+                    _storage:
+                      offset: 0x8
+                _objects:
+                  offset: 0x108
+                  inline: true
+                  _mask:
+                    offset: 0x594
+                  _storage:
+                    offset: 0x590
+                    _value:
+                      offset: 0x4
+                      inline: true
+                      _name:
+                        offset: 0x4
+                      _variables:
+                        offset: 0x4C
+                        inline: true
+                        _storage:
+                          offset: 0x8
+      scumm:
+        Scumm._scummVars[4] (room):
+          offset: 0x10
+        Scumm.vm.slot[6].number:
+          offset: A8 + 14 + 6 * 14 + 8
     2.1.0:
       groovie:
         _script:
@@ -110,6 +153,7 @@ scummvm:
               offset: 0x8
             _value:
               offset: 0x0
+              inline: true
           _mask:
             offset: 0x188
       sci:
@@ -118,6 +162,48 @@ scummvm:
           variables:
             offset: 0x88
             inline: true
+          _segMan:
+            offset: 0x4
+            _heap:
+              offset: 0x4
+              inline: true
+              _capacity:
+                offset: 0x0
+              _storage:
+                offset: 0x8
+                _type:
+                  offset: 0x4
+                _nr:
+                  offset: 0x8
+                _localsBlock:
+                  offset: 0x104
+                  _locals:
+                    offset: 0xC
+                    inline: true
+                    _storage:
+                      offset: 0x8
+                _objects:
+                  offset: 0x108
+                  inline: true
+                  _mask:
+                    offset: 0x61C
+                  _storage:
+                    offset: 0x618
+                    _value:
+                      offset: 0x0
+                      inline: true
+                      _name:
+                        offset: 0x4
+                      _variables:
+                        offset: 0x4C
+                        inline: true
+                        _storage:
+                          offset: 0x8
+      scumm:
+        Scumm._scummVars[4] (room):
+          offset: 0x10
+        Scumm.vm.slot[6].number:
+          offset: AC + 14 + 8 * 14 + 8
     2.1.1:
       groovie:
         _script:
@@ -174,6 +260,7 @@ scummvm:
               offset: 0x8
             _value:
               offset: 0x0
+              inline: true
           _mask:
             offset: 0x188
       sci:
@@ -182,6 +269,48 @@ scummvm:
           variables:
             offset: 0x88
             inline: true
+          _segMan:
+            offset: 0x4
+            _heap:
+              offset: 0x4
+              inline: true
+              _capacity:
+                offset: 0x0
+              _storage:
+                offset: 0x8
+                _type:
+                  offset: 0x4
+                _nr:
+                  offset: 0x8
+                _localsBlock:
+                  offset: 0x104
+                  _locals:
+                    offset: 0xC
+                    inline: true
+                    _storage:
+                      offset: 0x8
+                _objects:
+                  offset: 0x108
+                  inline: true
+                  _mask:
+                    offset: 0x61C
+                  _storage:
+                    offset: 0x618
+                    _value:
+                      offset: 0x0
+                      inline: true
+                      _name:
+                        offset: 0x4
+                      _variables:
+                        offset: 0x4C
+                        inline: true
+                        _storage:
+                          offset: 0x8
+      scumm:
+        Scumm._scummVars[4] (room):
+          offset: 0x10
+        Scumm.vm.slot[6].number:
+          offset: AC + 14 + 8 * 14 + 8
     2.1.2:
       groovie:
         _script:
@@ -238,6 +367,7 @@ scummvm:
               offset: 0x8
             _value:
               offset: 0x0
+              inline: true
           _mask:
             offset: 0x188
       sci:
@@ -246,6 +376,43 @@ scummvm:
           variables:
             offset: 0x88
             inline: true
+          _segMan:
+            offset: 0x4
+            _heap:
+              offset: 0x4
+              inline: true
+              _capacity:
+                offset: 0x0
+              _storage:
+                offset: 0x8
+                _type:
+                  offset: 0x4
+                _nr:
+                  offset: 0x8
+                _localsBlock:
+                  offset: 0x104
+                  _locals:
+                    offset: 0xC
+                    inline: true
+                    _storage:
+                      offset: 0x8
+                _objects:
+                  offset: 0x108
+                  inline: true
+                  _mask:
+                    offset: 0x61C
+                  _storage:
+                    offset: 0x618
+                    _value:
+                      offset: 0x0
+                      inline: true
+                      _name:
+                        offset: 0x4
+                      _variables:
+                        offset: 0x4C
+                        inline: true
+                        _storage:
+                          offset: 0x8
     2.2.0:
       groovie:
         _script:
@@ -302,6 +469,7 @@ scummvm:
               offset: 0x8
             _value:
               offset: 0x0
+              inline: true
           _mask:
             offset: 0x188
       sci:
@@ -310,6 +478,43 @@ scummvm:
           variables:
             offset: 0xAC
             inline: true
+          _segMan:
+            offset: 0x4
+            _heap:
+              offset: 0x4
+              inline: true
+              _capacity:
+                offset: 0x0
+              _storage:
+                offset: 0x8
+                _type:
+                  offset: 0x4
+                _nr:
+                  offset: 0x8
+                _localsBlock:
+                  offset: 0x104
+                  _locals:
+                    offset: 0xC
+                    inline: true
+                    _storage:
+                      offset: 0x8
+                _objects:
+                  offset: 0x108
+                  inline: true
+                  _mask:
+                    offset: 0x61C
+                  _storage:
+                    offset: 0x618
+                    _value:
+                      offset: 0x0
+                      inline: true
+                      _name:
+                        offset: 0x4
+                      _variables:
+                        offset: 0x4C
+                        inline: true
+                        _storage:
+                          offset: 0x8
     2.5.0:
       groovie:
         _script:
@@ -366,6 +571,7 @@ scummvm:
               offset: 0x8
             _value:
               offset: 0x0
+              inline: true
           _mask:
             offset: 0x188
       sci:
@@ -374,6 +580,43 @@ scummvm:
           variables:
             offset: 0xB0
             inline: true
+          _segMan:
+            offset: 0x4
+            _heap:
+              offset: 0x4
+              inline: true
+              _capacity:
+                offset: 0x0
+              _storage:
+                offset: 0x8
+                _type:
+                  offset: 0x4
+                _nr:
+                  offset: 0x8
+                _localsBlock:
+                  offset: 0x104
+                  _locals:
+                    offset: 0xC
+                    inline: true
+                    _storage:
+                      offset: 0x8
+                _objects:
+                  offset: 0x108
+                  inline: true
+                  _mask:
+                    offset: 0x61C
+                  _storage:
+                    offset: 0x618
+                    _value:
+                      offset: 0x0
+                      inline: true
+                      _name:
+                        offset: 0x4
+                      _variables:
+                        offset: 0x4C
+                        inline: true
+                        _storage:
+                          offset: 0x8
     2.5.1:
       groovie:
         _script:
@@ -430,6 +673,7 @@ scummvm:
               offset: 0x8
             _value:
               offset: 0x0
+              inline: true
           _mask:
             offset: 0x188
       sci:
@@ -438,6 +682,43 @@ scummvm:
           variables:
             offset: 0xB0
             inline: true
+          _segMan:
+            offset: 0x4
+            _heap:
+              offset: 0x4
+              inline: true
+              _capacity:
+                offset: 0x0
+              _storage:
+                offset: 0x8
+                _type:
+                  offset: 0x4
+                _nr:
+                  offset: 0x8
+                _localsBlock:
+                  offset: 0x104
+                  _locals:
+                    offset: 0xC
+                    inline: true
+                    _storage:
+                      offset: 0x8
+                _objects:
+                  offset: 0x108
+                  inline: true
+                  _mask:
+                    offset: 0x61C
+                  _storage:
+                    offset: 0x618
+                    _value:
+                      offset: 0x0
+                      inline: true
+                      _name:
+                        offset: 0x4
+                      _variables:
+                        offset: 0x4C
+                        inline: true
+                        _storage:
+                          offset: 0x8
     2.6.0:
       groovie:
         _script:
@@ -494,6 +775,7 @@ scummvm:
               offset: 0x8
             _value:
               offset: 0x0
+              inline: true
           _mask:
             offset: 0x188
       sci:
@@ -502,6 +784,43 @@ scummvm:
           variables:
             offset: 0xB0
             inline: true
+          _segMan:
+            offset: 0x4
+            _heap:
+              offset: 0x4
+              inline: true
+              _capacity:
+                offset: 0x0
+              _storage:
+                offset: 0x8
+                _type:
+                  offset: 0x4
+                _nr:
+                  offset: 0x8
+                _localsBlock:
+                  offset: 0x104
+                  _locals:
+                    offset: 0xC
+                    inline: true
+                    _storage:
+                      offset: 0x8
+                _objects:
+                  offset: 0x108
+                  inline: true
+                  _mask:
+                    offset: 0x61C
+                  _storage:
+                    offset: 0x618
+                    _value:
+                      offset: 0x0
+                      inline: true
+                      _name:
+                        offset: 0x4
+                      _variables:
+                        offset: 0x4C
+                        inline: true
+                        _storage:
+                          offset: 0x8
     2.6.1:
       groovie:
         _script:
@@ -558,6 +877,7 @@ scummvm:
               offset: 0x8
             _value:
               offset: 0x0
+              inline: true
           _mask:
             offset: 0x188
       sci:
@@ -566,6 +886,43 @@ scummvm:
           variables:
             offset: 0xB0
             inline: true
+          _segMan:
+            offset: 0x4
+            _heap:
+              offset: 0x4
+              inline: true
+              _capacity:
+                offset: 0x0
+              _storage:
+                offset: 0x8
+                _type:
+                  offset: 0x4
+                _nr:
+                  offset: 0x8
+                _localsBlock:
+                  offset: 0x104
+                  _locals:
+                    offset: 0xC
+                    inline: true
+                    _storage:
+                      offset: 0x8
+                _objects:
+                  offset: 0x108
+                  inline: true
+                  _mask:
+                    offset: 0x61C
+                  _storage:
+                    offset: 0x618
+                    _value:
+                      offset: 0x0
+                      inline: true
+                      _name:
+                        offset: 0x4
+                      _variables:
+                        offset: 0x4C
+                        inline: true
+                        _storage:
+                          offset: 0x8
     2.7.0:
       groovie:
         _script:
@@ -622,6 +979,7 @@ scummvm:
               offset: 0x8
             _value:
               offset: 0x0
+              inline: true
           _mask:
             offset: 0x188
       sci:
@@ -630,6 +988,43 @@ scummvm:
           variables:
             offset: 0xB0
             inline: true
+          _segMan:
+            offset: 0x4
+            _heap:
+              offset: 0x4
+              inline: true
+              _capacity:
+                offset: 0x0
+              _storage:
+                offset: 0x8
+                _type:
+                  offset: 0x4
+                _nr:
+                  offset: 0x8
+                _localsBlock:
+                  offset: 0x104
+                  _locals:
+                    offset: 0xC
+                    inline: true
+                    _storage:
+                      offset: 0x8
+                _objects:
+                  offset: 0x108
+                  inline: true
+                  _mask:
+                    offset: 0x61C
+                  _storage:
+                    offset: 0x618
+                    _value:
+                      offset: 0x0
+                      inline: true
+                      _name:
+                        offset: 0x4
+                      _variables:
+                        offset: 0x4C
+                        inline: true
+                        _storage:
+                          offset: 0x8
     2.7.1:
       groovie:
         _script:
@@ -686,6 +1081,7 @@ scummvm:
               offset: 0x8
             _value:
               offset: 0x0
+              inline: true
           _mask:
             offset: 0x188
       sci:
@@ -694,6 +1090,43 @@ scummvm:
           variables:
             offset: 0xB0
             inline: true
+          _segMan:
+            offset: 0x4
+            _heap:
+              offset: 0x4
+              inline: true
+              _capacity:
+                offset: 0x0
+              _storage:
+                offset: 0x8
+                _type:
+                  offset: 0x4
+                _nr:
+                  offset: 0x8
+                _localsBlock:
+                  offset: 0x104
+                  _locals:
+                    offset: 0xC
+                    inline: true
+                    _storage:
+                      offset: 0x8
+                _objects:
+                  offset: 0x108
+                  inline: true
+                  _mask:
+                    offset: 0x61C
+                  _storage:
+                    offset: 0x618
+                    _value:
+                      offset: 0x0
+                      inline: true
+                      _name:
+                        offset: 0x4
+                      _variables:
+                        offset: 0x4C
+                        inline: true
+                        _storage:
+                          offset: 0x8
     2.8.0:
       groovie:
         _script:
@@ -750,6 +1183,7 @@ scummvm:
               offset: 0x8
             _value:
               offset: 0x0
+              inline: true
           _mask:
             offset: 0x188
       sci:
@@ -758,6 +1192,43 @@ scummvm:
           variables:
             offset: 0xB0
             inline: true
+          _segMan:
+            offset: 0x4
+            _heap:
+              offset: 0x4
+              inline: true
+              _capacity:
+                offset: 0x0
+              _storage:
+                offset: 0x8
+                _type:
+                  offset: 0x4
+                _nr:
+                  offset: 0x8
+                _localsBlock:
+                  offset: 0x104
+                  _locals:
+                    offset: 0xC
+                    inline: true
+                    _storage:
+                      offset: 0x8
+                _objects:
+                  offset: 0x108
+                  inline: true
+                  _mask:
+                    offset: 0x61C
+                  _storage:
+                    offset: 0x618
+                    _value:
+                      offset: 0x0
+                      inline: true
+                      _name:
+                        offset: 0x4
+                      _variables:
+                        offset: 0x4C
+                        inline: true
+                        _storage:
+                          offset: 0x8
     2.8.1:
       groovie:
         _script:
@@ -814,6 +1285,7 @@ scummvm:
               offset: 0x8
             _value:
               offset: 0x0
+              inline: true
           _mask:
             offset: 0x188
       sci:
@@ -822,6 +1294,43 @@ scummvm:
           variables:
             offset: 0xB0
             inline: true
+          _segMan:
+            offset: 0x4
+            _heap:
+              offset: 0x4
+              inline: true
+              _capacity:
+                offset: 0x0
+              _storage:
+                offset: 0x8
+                _type:
+                  offset: 0x4
+                _nr:
+                  offset: 0x8
+                _localsBlock:
+                  offset: 0x104
+                  _locals:
+                    offset: 0xC
+                    inline: true
+                    _storage:
+                      offset: 0x8
+                _objects:
+                  offset: 0x108
+                  inline: true
+                  _mask:
+                    offset: 0x61C
+                  _storage:
+                    offset: 0x618
+                    _value:
+                      offset: 0x0
+                      inline: true
+                      _name:
+                        offset: 0x4
+                      _variables:
+                        offset: 0x4C
+                        inline: true
+                        _storage:
+                          offset: 0x8
     2.9.0:
       groovie:
         _script:
@@ -878,6 +1387,7 @@ scummvm:
               offset: 0x8
             _value:
               offset: 0x0
+              inline: true
           _mask:
             offset: 0x188
       sci:
@@ -886,6 +1396,43 @@ scummvm:
           variables:
             offset: 0xB0
             inline: true
+          _segMan:
+            offset: 0x4
+            _heap:
+              offset: 0x4
+              inline: true
+              _capacity:
+                offset: 0x0
+              _storage:
+                offset: 0x8
+                _type:
+                  offset: 0x4
+                _nr:
+                  offset: 0x8
+                _localsBlock:
+                  offset: 0x104
+                  _locals:
+                    offset: 0xC
+                    inline: true
+                    _storage:
+                      offset: 0x8
+                _objects:
+                  offset: 0x108
+                  inline: true
+                  _mask:
+                    offset: 0x61C
+                  _storage:
+                    offset: 0x618
+                    _value:
+                      offset: 0x0
+                      inline: true
+                      _name:
+                        offset: 0x4
+                      _variables:
+                        offset: 0x4C
+                        inline: true
+                        _storage:
+                          offset: 0x8
     2.9.1:
       groovie:
         _script:
@@ -942,6 +1489,7 @@ scummvm:
               offset: 0x8
             _value:
               offset: 0x0
+              inline: true
           _mask:
             offset: 0x188
       sci:
@@ -950,6 +1498,43 @@ scummvm:
           variables:
             offset: 0xB0
             inline: true
+          _segMan:
+            offset: 0x4
+            _heap:
+              offset: 0x4
+              inline: true
+              _capacity:
+                offset: 0x0
+              _storage:
+                offset: 0x8
+                _type:
+                  offset: 0x4
+                _nr:
+                  offset: 0x8
+                _localsBlock:
+                  offset: 0x104
+                  _locals:
+                    offset: 0xC
+                    inline: true
+                    _storage:
+                      offset: 0x8
+                _objects:
+                  offset: 0x108
+                  inline: true
+                  _mask:
+                    offset: 0x61C
+                  _storage:
+                    offset: 0x618
+                    _value:
+                      offset: 0x0
+                      inline: true
+                      _name:
+                        offset: 0x4
+                      _variables:
+                        offset: 0x4C
+                        inline: true
+                        _storage:
+                          offset: 0x8
     Myst 25th Anniversary (32-bit):
       mohawk_myst:
         _sound:
@@ -998,6 +1583,7 @@ scummvm:
               offset: 0x4
             _value:
               offset: 0x20
+              inline: true
           _mask:
             offset: 0x184
   64-bit:
@@ -1057,6 +1643,7 @@ scummvm:
               offset: 0x10
             _value:
               offset: 0x0
+              inline: true
           _mask:
             offset: 0x218
       sci:
@@ -1065,6 +1652,43 @@ scummvm:
           variables:
             offset: 0xC0
             inline: true
+          _segMan:
+            offset: 0x8
+            _heap:
+              offset: 0x8
+              inline: true
+              _capacity:
+                offset: 0x0
+              _storage:
+                offset: 0x8
+                _type:
+                  offset: 0x8
+                _nr:
+                  offset: 0xC
+                _localsBlock:
+                  offset: 0x178
+                  _locals:
+                    offset: 0x10
+                    inline: true
+                    _storage:
+                      offset: 0x8
+                _objects:
+                  offset: 0x180
+                  inline: true
+                  _mask:
+                    offset: 0x868
+                  _storage:
+                    offset: 0x860
+                    _value:
+                      offset: 0x0
+                      inline: true
+                      _name:
+                        offset: 0x8
+                      _variables:
+                        offset: 0x70
+                        inline: true
+                        _storage:
+                          offset: 0x8
     2.1.1:
       groovie:
         _script:
@@ -1121,6 +1745,7 @@ scummvm:
               offset: 0x10
             _value:
               offset: 0x0
+              inline: true
           _mask:
             offset: 0x218
       sci:
@@ -1129,6 +1754,43 @@ scummvm:
           variables:
             offset: 0xC0
             inline: true
+          _segMan:
+            offset: 0x8
+            _heap:
+              offset: 0x8
+              inline: true
+              _capacity:
+                offset: 0x0
+              _storage:
+                offset: 0x8
+                _type:
+                  offset: 0x8
+                _nr:
+                  offset: 0xC
+                _localsBlock:
+                  offset: 0x178
+                  _locals:
+                    offset: 0x10
+                    inline: true
+                    _storage:
+                      offset: 0x8
+                _objects:
+                  offset: 0x180
+                  inline: true
+                  _mask:
+                    offset: 0x868
+                  _storage:
+                    offset: 0x860
+                    _value:
+                      offset: 0x0
+                      inline: true
+                      _name:
+                        offset: 0x8
+                      _variables:
+                        offset: 0x70
+                        inline: true
+                        _storage:
+                          offset: 0x8
     2.1.2:
       groovie:
         _script:
@@ -1185,6 +1847,7 @@ scummvm:
               offset: 0x10
             _value:
               offset: 0x0
+              inline: true
           _mask:
             offset: 0x218
       sci:
@@ -1193,6 +1856,43 @@ scummvm:
           variables:
             offset: 0xC0
             inline: true
+          _segMan:
+            offset: 0x8
+            _heap:
+              offset: 0x8
+              inline: true
+              _capacity:
+                offset: 0x0
+              _storage:
+                offset: 0x8
+                _type:
+                  offset: 0x8
+                _nr:
+                  offset: 0xC
+                _localsBlock:
+                  offset: 0x178
+                  _locals:
+                    offset: 0x10
+                    inline: true
+                    _storage:
+                      offset: 0x8
+                _objects:
+                  offset: 0x180
+                  inline: true
+                  _mask:
+                    offset: 0x868
+                  _storage:
+                    offset: 0x860
+                    _value:
+                      offset: 0x0
+                      inline: true
+                      _name:
+                        offset: 0x8
+                      _variables:
+                        offset: 0x70
+                        inline: true
+                        _storage:
+                          offset: 0x8
     2.2.0:
       groovie:
         _script:
@@ -1249,6 +1949,7 @@ scummvm:
               offset: 0x10
             _value:
               offset: 0x0
+              inline: true
           _mask:
             offset: 0x218
       sci:
@@ -1257,6 +1958,43 @@ scummvm:
           variables:
             offset: 0xF0
             inline: true
+          _segMan:
+            offset: 0x8
+            _heap:
+              offset: 0x8
+              inline: true
+              _capacity:
+                offset: 0x0
+              _storage:
+                offset: 0x8
+                _type:
+                  offset: 0x8
+                _nr:
+                  offset: 0xC
+                _localsBlock:
+                  offset: 0x178
+                  _locals:
+                    offset: 0x10
+                    inline: true
+                    _storage:
+                      offset: 0x8
+                _objects:
+                  offset: 0x180
+                  inline: true
+                  _mask:
+                    offset: 0x868
+                  _storage:
+                    offset: 0x860
+                    _value:
+                      offset: 0x0
+                      inline: true
+                      _name:
+                        offset: 0x8
+                      _variables:
+                        offset: 0x70
+                        inline: true
+                        _storage:
+                          offset: 0x8
     2.5.0:
       groovie:
         _script:
@@ -1313,6 +2051,7 @@ scummvm:
               offset: 0x10
             _value:
               offset: 0x0
+              inline: true
           _mask:
             offset: 0x218
       sci:
@@ -1321,6 +2060,43 @@ scummvm:
           variables:
             offset: 0xF0
             inline: true
+          _segMan:
+            offset: 0x8
+            _heap:
+              offset: 0x8
+              inline: true
+              _capacity:
+                offset: 0x0
+              _storage:
+                offset: 0x8
+                _type:
+                  offset: 0x8
+                _nr:
+                  offset: 0xC
+                _localsBlock:
+                  offset: 0x178
+                  _locals:
+                    offset: 0x10
+                    inline: true
+                    _storage:
+                      offset: 0x8
+                _objects:
+                  offset: 0x180
+                  inline: true
+                  _mask:
+                    offset: 0x868
+                  _storage:
+                    offset: 0x860
+                    _value:
+                      offset: 0x0
+                      inline: true
+                      _name:
+                        offset: 0x8
+                      _variables:
+                        offset: 0x70
+                        inline: true
+                        _storage:
+                          offset: 0x8
     2.5.1:
       groovie:
         _script:
@@ -1377,6 +2153,7 @@ scummvm:
               offset: 0x10
             _value:
               offset: 0x0
+              inline: true
           _mask:
             offset: 0x218
       sci:
@@ -1385,6 +2162,43 @@ scummvm:
           variables:
             offset: 0xF0
             inline: true
+          _segMan:
+            offset: 0x8
+            _heap:
+              offset: 0x8
+              inline: true
+              _capacity:
+                offset: 0x0
+              _storage:
+                offset: 0x8
+                _type:
+                  offset: 0x8
+                _nr:
+                  offset: 0xC
+                _localsBlock:
+                  offset: 0x178
+                  _locals:
+                    offset: 0x10
+                    inline: true
+                    _storage:
+                      offset: 0x8
+                _objects:
+                  offset: 0x180
+                  inline: true
+                  _mask:
+                    offset: 0x868
+                  _storage:
+                    offset: 0x860
+                    _value:
+                      offset: 0x0
+                      inline: true
+                      _name:
+                        offset: 0x8
+                      _variables:
+                        offset: 0x70
+                        inline: true
+                        _storage:
+                          offset: 0x8
     2.6.0:
       groovie:
         _script:
@@ -1441,6 +2255,7 @@ scummvm:
               offset: 0x10
             _value:
               offset: 0x0
+              inline: true
           _mask:
             offset: 0x218
       sci:
@@ -1449,6 +2264,43 @@ scummvm:
           variables:
             offset: 0xF0
             inline: true
+          _segMan:
+            offset: 0x8
+            _heap:
+              offset: 0x8
+              inline: true
+              _capacity:
+                offset: 0x0
+              _storage:
+                offset: 0x8
+                _type:
+                  offset: 0x8
+                _nr:
+                  offset: 0xC
+                _localsBlock:
+                  offset: 0x178
+                  _locals:
+                    offset: 0x10
+                    inline: true
+                    _storage:
+                      offset: 0x8
+                _objects:
+                  offset: 0x180
+                  inline: true
+                  _mask:
+                    offset: 0x868
+                  _storage:
+                    offset: 0x860
+                    _value:
+                      offset: 0x0
+                      inline: true
+                      _name:
+                        offset: 0x8
+                      _variables:
+                        offset: 0x70
+                        inline: true
+                        _storage:
+                          offset: 0x8
     2.6.1:
       groovie:
         _script:
@@ -1505,6 +2357,7 @@ scummvm:
               offset: 0x10
             _value:
               offset: 0x0
+              inline: true
           _mask:
             offset: 0x218
       sci:
@@ -1513,6 +2366,43 @@ scummvm:
           variables:
             offset: 0xF0
             inline: true
+          _segMan:
+            offset: 0x8
+            _heap:
+              offset: 0x8
+              inline: true
+              _capacity:
+                offset: 0x0
+              _storage:
+                offset: 0x8
+                _type:
+                  offset: 0x8
+                _nr:
+                  offset: 0xC
+                _localsBlock:
+                  offset: 0x178
+                  _locals:
+                    offset: 0x10
+                    inline: true
+                    _storage:
+                      offset: 0x8
+                _objects:
+                  offset: 0x180
+                  inline: true
+                  _mask:
+                    offset: 0x868
+                  _storage:
+                    offset: 0x860
+                    _value:
+                      offset: 0x0
+                      inline: true
+                      _name:
+                        offset: 0x8
+                      _variables:
+                        offset: 0x70
+                        inline: true
+                        _storage:
+                          offset: 0x8
     2.7.0:
       groovie:
         _script:
@@ -1569,6 +2459,7 @@ scummvm:
               offset: 0x10
             _value:
               offset: 0x0
+              inline: true
           _mask:
             offset: 0x218
       sci:
@@ -1577,6 +2468,43 @@ scummvm:
           variables:
             offset: 0xF0
             inline: true
+          _segMan:
+            offset: 0x8
+            _heap:
+              offset: 0x8
+              inline: true
+              _capacity:
+                offset: 0x0
+              _storage:
+                offset: 0x8
+                _type:
+                  offset: 0x8
+                _nr:
+                  offset: 0xC
+                _localsBlock:
+                  offset: 0x178
+                  _locals:
+                    offset: 0x10
+                    inline: true
+                    _storage:
+                      offset: 0x8
+                _objects:
+                  offset: 0x180
+                  inline: true
+                  _mask:
+                    offset: 0x868
+                  _storage:
+                    offset: 0x860
+                    _value:
+                      offset: 0x0
+                      inline: true
+                      _name:
+                        offset: 0x8
+                      _variables:
+                        offset: 0x70
+                        inline: true
+                        _storage:
+                          offset: 0x8
     2.7.1:
       groovie:
         _script:
@@ -1633,6 +2561,7 @@ scummvm:
               offset: 0x10
             _value:
               offset: 0x0
+              inline: true
           _mask:
             offset: 0x218
       sci:
@@ -1641,6 +2570,43 @@ scummvm:
           variables:
             offset: 0xF0
             inline: true
+          _segMan:
+            offset: 0x8
+            _heap:
+              offset: 0x8
+              inline: true
+              _capacity:
+                offset: 0x0
+              _storage:
+                offset: 0x8
+                _type:
+                  offset: 0x8
+                _nr:
+                  offset: 0xC
+                _localsBlock:
+                  offset: 0x178
+                  _locals:
+                    offset: 0x10
+                    inline: true
+                    _storage:
+                      offset: 0x8
+                _objects:
+                  offset: 0x180
+                  inline: true
+                  _mask:
+                    offset: 0x868
+                  _storage:
+                    offset: 0x860
+                    _value:
+                      offset: 0x0
+                      inline: true
+                      _name:
+                        offset: 0x8
+                      _variables:
+                        offset: 0x70
+                        inline: true
+                        _storage:
+                          offset: 0x8
     2.8.0:
       groovie:
         _script:
@@ -1697,6 +2663,7 @@ scummvm:
               offset: 0x10
             _value:
               offset: 0x0
+              inline: true
           _mask:
             offset: 0x218
       sci:
@@ -1705,6 +2672,43 @@ scummvm:
           variables:
             offset: 0xF0
             inline: true
+          _segMan:
+            offset: 0x8
+            _heap:
+              offset: 0x8
+              inline: true
+              _capacity:
+                offset: 0x0
+              _storage:
+                offset: 0x8
+                _type:
+                  offset: 0x8
+                _nr:
+                  offset: 0xC
+                _localsBlock:
+                  offset: 0x178
+                  _locals:
+                    offset: 0x10
+                    inline: true
+                    _storage:
+                      offset: 0x8
+                _objects:
+                  offset: 0x180
+                  inline: true
+                  _mask:
+                    offset: 0x868
+                  _storage:
+                    offset: 0x860
+                    _value:
+                      offset: 0x0
+                      inline: true
+                      _name:
+                        offset: 0x8
+                      _variables:
+                        offset: 0x70
+                        inline: true
+                        _storage:
+                          offset: 0x8
     2.8.1:
       groovie:
         _script:
@@ -1761,6 +2765,7 @@ scummvm:
               offset: 0x10
             _value:
               offset: 0x0
+              inline: true
           _mask:
             offset: 0x218
       sci:
@@ -1769,6 +2774,43 @@ scummvm:
           variables:
             offset: 0xF0
             inline: true
+          _segMan:
+            offset: 0x8
+            _heap:
+              offset: 0x8
+              inline: true
+              _capacity:
+                offset: 0x0
+              _storage:
+                offset: 0x8
+                _type:
+                  offset: 0x8
+                _nr:
+                  offset: 0xC
+                _localsBlock:
+                  offset: 0x178
+                  _locals:
+                    offset: 0x10
+                    inline: true
+                    _storage:
+                      offset: 0x8
+                _objects:
+                  offset: 0x180
+                  inline: true
+                  _mask:
+                    offset: 0x868
+                  _storage:
+                    offset: 0x860
+                    _value:
+                      offset: 0x0
+                      inline: true
+                      _name:
+                        offset: 0x8
+                      _variables:
+                        offset: 0x70
+                        inline: true
+                        _storage:
+                          offset: 0x8
     2.9.0:
       groovie:
         _script:
@@ -1825,6 +2867,7 @@ scummvm:
               offset: 0x10
             _value:
               offset: 0x0
+              inline: true
           _mask:
             offset: 0x218
       sci:
@@ -1833,6 +2876,43 @@ scummvm:
           variables:
             offset: 0xF0
             inline: true
+          _segMan:
+            offset: 0x8
+            _heap:
+              offset: 0x8
+              inline: true
+              _capacity:
+                offset: 0x0
+              _storage:
+                offset: 0x8
+                _type:
+                  offset: 0x8
+                _nr:
+                  offset: 0xC
+                _localsBlock:
+                  offset: 0x178
+                  _locals:
+                    offset: 0x10
+                    inline: true
+                    _storage:
+                      offset: 0x8
+                _objects:
+                  offset: 0x180
+                  inline: true
+                  _mask:
+                    offset: 0x868
+                  _storage:
+                    offset: 0x860
+                    _value:
+                      offset: 0x0
+                      inline: true
+                      _name:
+                        offset: 0x8
+                      _variables:
+                        offset: 0x70
+                        inline: true
+                        _storage:
+                          offset: 0x8
     2.9.1:
       groovie:
         _script:
@@ -1889,6 +2969,7 @@ scummvm:
               offset: 0x10
             _value:
               offset: 0x0
+              inline: true
           _mask:
             offset: 0x218
       sci:
@@ -1897,6 +2978,43 @@ scummvm:
           variables:
             offset: 0xF0
             inline: true
+          _segMan:
+            offset: 0x8
+            _heap:
+              offset: 0x8
+              inline: true
+              _capacity:
+                offset: 0x0
+              _storage:
+                offset: 0x8
+                _type:
+                  offset: 0x8
+                _nr:
+                  offset: 0xC
+                _localsBlock:
+                  offset: 0x178
+                  _locals:
+                    offset: 0x10
+                    inline: true
+                    _storage:
+                      offset: 0x8
+                _objects:
+                  offset: 0x180
+                  inline: true
+                  _mask:
+                    offset: 0x868
+                  _storage:
+                    offset: 0x860
+                    _value:
+                      offset: 0x0
+                      inline: true
+                      _name:
+                        offset: 0x8
+                      _variables:
+                        offset: 0x70
+                        inline: true
+                        _storage:
+                          offset: 0x8
     Myst 25th Anniversary (64-bit):
       mohawk_myst:
         _sound:
@@ -1945,5 +3063,6 @@ scummvm:
               offset: 0x10
             _value:
               offset: 0x0
+              inline: true
           _mask:
             offset: 0x218

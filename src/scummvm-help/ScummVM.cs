@@ -15,6 +15,8 @@ public class ScummVM
 {
     // g_engine pointer
     protected IntPtr g_engine = IntPtr.Zero;
+    protected IntPtr engineCurr = IntPtr.Zero;
+    protected IntPtr enginePrev = IntPtr.Zero;
     public IntPtr GEngine => g_engine;
 
     // The name of the ScummVM engine the game runs on
@@ -40,7 +42,21 @@ public class ScummVM
 
     private Func<dynamic, bool> tryLoad;
     private CancellationTokenSource _tryLoadCts;
-    private volatile bool loaded = false; 
+    private volatile bool loaded = false;
+
+    // Debug flags
+    internal bool logResolvedPaths = false;
+    internal bool logChangedWatchers = false;
+
+    public void LogResolvedPaths()
+    {
+        logResolvedPaths = true;
+    }
+
+    public void LogChangedWatchers()
+    {
+        logChangedWatchers = true;
+    }
 
     public ScummVM()
     {
@@ -287,9 +303,36 @@ public class ScummVM
 
     public void Update()
     {
-        watchers.UpdateAll(Game);
+        enginePrev = engineCurr;
+        engineCurr = Game.ReadPointer(g_engine);
 
-        MapPointers();
+        // Reattach script when returning to the ScummVM main menu
+        if (enginePrev != IntPtr.Zero && engineCurr == IntPtr.Zero)
+        {
+            Dbg.Info("Reattaching...");
+            Dbg.Info();
+
+            script.GetType().GetField(
+                "_game",
+                BindingFlags.NonPublic | BindingFlags.Instance
+            ).SetValue(script, null); 
+        }
+        else
+        {
+            watchers.UpdateAll(Game);
+            MapPointers();
+
+            if (logChangedWatchers)
+            {
+                foreach (var watcher in watchers)
+                {
+                    if (watcher.Changed)
+                    {
+                        Dbg.Info($"{watcher.Name}: {watcher.Old} -> {watcher.Current}");
+                    }
+                }
+            }
+        }
     }
 
     public void MapPointers()
@@ -425,7 +468,12 @@ public class ScummVM
         }
 
         var offsets = derefOffsets.ToArray();
-        Dbg.Info($"Resolved path: 0x{GEngine.ToString("X")}, " + string.Join(", ", offsets.Select(n => $"0x{n:X}")));
+
+        if (logResolvedPaths)
+        {
+            Dbg.Info($"Resolved path: 0x{GEngine.ToString("X")}, " + string.Join(", ", offsets.Select(n => $"0x{n:X}")));
+        }
+        
         return offsets;
     }
 
