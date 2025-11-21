@@ -76,12 +76,12 @@ Now, `vars.myWatcher` is a `MemoryWatcher` watching the value at the address rea
 
 #### Read\<T>
 
-The second memory utility is `Read<T>`. As the name suggests, it merely reads a value of type `<T>` at the specified address rather than creating a watcher.
+The second memory utility is `Read<T>`. As the name suggests, it merely reads a value of type `T` at the specified address rather than creating a watcher.
 
 Use it for one-time reads, like this:
 
 ```c#
-var arraySize = vars.ScummVM.Read<int>("_storage", "_mask");
+var capacity = vars.ScummVM.Read<int>("_gamestate", "_segMan", "_heap", "_capacity");
 ```
 
 ### Using vars.ScummVM\[\<NAME>]
@@ -111,7 +111,7 @@ The following debug flags exist (set them in `startup{}`):
   ```
   [ScummVM-Help] Resolved path: 0x7FF67FF1CA38, 0x200, 0x8, 0x8
   ```
-- `vars.ScummVM.LogChangedWatchers()`: print changes in any watchers stored inside the `vars.ScummVM[]` Dictionary.
+- `vars.ScummVM.LogChangedWatchers()`: print changes in any watchers stored inside the helper's `MemoryWatcherList`.
   ```
   [ScummVM-Help] room: 100 -> 101
   ```
