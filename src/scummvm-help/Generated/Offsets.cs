@@ -191,13 +191,19 @@ namespace Generated
                         } },
                     { "scumm", new Dictionary<string, object>
                         {
-                        { "Scumm._scummVars[4] (room)", new Dictionary<string, object>
+                        { "_scummVars", new Dictionary<string, object>
                             {
-                            { "offset", "0x10" }
+                            { "offset", "0x2800" }
                             } },
-                        { "Scumm.vm.slot[6].number", new Dictionary<string, object>
+                        { "vm", new Dictionary<string, object>
                             {
-                            { "offset", "A8 + 14 + 6 * 14 + 8" }
+                            { "offset", "0xA8" },
+                            { "inline", "true" },
+                            { "slot", new Dictionary<string, object>
+                                {
+                                { "offset", "0x14" },
+                                { "inline", "true" }
+                                } }
                             } }
                         } }
                     } },
@@ -400,13 +406,19 @@ namespace Generated
                         } },
                     { "scumm", new Dictionary<string, object>
                         {
-                        { "Scumm._scummVars[4] (room)", new Dictionary<string, object>
+                        { "_scummVars", new Dictionary<string, object>
                             {
-                            { "offset", "0x10" }
+                            { "offset", "0x2804" }
                             } },
-                        { "Scumm.vm.slot[6].number", new Dictionary<string, object>
+                        { "vm", new Dictionary<string, object>
                             {
-                            { "offset", "AC + 14 + 8 * 14 + 8" }
+                            { "offset", "0xAC" },
+                            { "inline", "true" },
+                            { "slot", new Dictionary<string, object>
+                                {
+                                { "offset", "0x14" },
+                                { "inline", "true" }
+                                } }
                             } }
                         } }
                     } },
@@ -609,13 +621,19 @@ namespace Generated
                         } },
                     { "scumm", new Dictionary<string, object>
                         {
-                        { "Scumm._scummVars[4] (room)", new Dictionary<string, object>
+                        { "_scummVars", new Dictionary<string, object>
                             {
-                            { "offset", "0x10" }
+                            { "offset", "0x2804" }
                             } },
-                        { "Scumm.vm.slot[6].number", new Dictionary<string, object>
+                        { "vm", new Dictionary<string, object>
                             {
-                            { "offset", "AC + 14 + 8 * 14 + 8" }
+                            { "offset", "0xAC" },
+                            { "inline", "true" },
+                            { "slot", new Dictionary<string, object>
+                                {
+                                { "offset", "0x14" },
+                                { "inline", "true" }
+                                } }
                             } }
                         } }
                     } },
@@ -813,6 +831,23 @@ namespace Generated
                                             } }
                                         } }
                                     } }
+                                } }
+                            } }
+                        } },
+                    { "scumm", new Dictionary<string, object>
+                        {
+                        { "_scummVars", new Dictionary<string, object>
+                            {
+                            { "offset", "0x2804" }
+                            } },
+                        { "vm", new Dictionary<string, object>
+                            {
+                            { "offset", "0xAC" },
+                            { "inline", "true" },
+                            { "slot", new Dictionary<string, object>
+                                {
+                                { "offset", "0x14" },
+                                { "inline", "true" }
                                 } }
                             } }
                         } }
@@ -1013,6 +1048,23 @@ namespace Generated
                                     } }
                                 } }
                             } }
+                        } },
+                    { "scumm", new Dictionary<string, object>
+                        {
+                        { "_scummVars", new Dictionary<string, object>
+                            {
+                            { "offset", "0x280C" }
+                            } },
+                        { "vm", new Dictionary<string, object>
+                            {
+                            { "offset", "0xB4" },
+                            { "inline", "true" },
+                            { "slot", new Dictionary<string, object>
+                                {
+                                { "offset", "0x14" },
+                                { "inline", "true" }
+                                } }
+                            } }
                         } }
                     } },
                 { "2.5.0", new Dictionary<string, object>
@@ -1209,6 +1261,23 @@ namespace Generated
                                             } }
                                         } }
                                     } }
+                                } }
+                            } }
+                        } },
+                    { "scumm", new Dictionary<string, object>
+                        {
+                        { "_scummVars", new Dictionary<string, object>
+                            {
+                            { "offset", "0x2814" }
+                            } },
+                        { "vm", new Dictionary<string, object>
+                            {
+                            { "offset", "0xBC" },
+                            { "inline", "true" },
+                            { "slot", new Dictionary<string, object>
+                                {
+                                { "offset", "0x14" },
+                                { "inline", "true" }
                                 } }
                             } }
                         } }
@@ -1409,6 +1478,23 @@ namespace Generated
                                     } }
                                 } }
                             } }
+                        } },
+                    { "scumm", new Dictionary<string, object>
+                        {
+                        { "_scummVars", new Dictionary<string, object>
+                            {
+                            { "offset", "0x2814" }
+                            } },
+                        { "vm", new Dictionary<string, object>
+                            {
+                            { "offset", "0xBC" },
+                            { "inline", "true" },
+                            { "slot", new Dictionary<string, object>
+                                {
+                                { "offset", "0x14" },
+                                { "inline", "true" }
+                                } }
+                            } }
                         } }
                     } },
                 { "2.6.0", new Dictionary<string, object>
@@ -1605,6 +1691,23 @@ namespace Generated
                                             } }
                                         } }
                                     } }
+                                } }
+                            } }
+                        } },
+                    { "scumm", new Dictionary<string, object>
+                        {
+                        { "_scummVars", new Dictionary<string, object>
+                            {
+                            { "offset", "0x2824" }
+                            } },
+                        { "vm", new Dictionary<string, object>
+                            {
+                            { "offset", "0xC0" },
+                            { "inline", "true" },
+                            { "slot", new Dictionary<string, object>
+                                {
+                                { "offset", "0x14" },
+                                { "inline", "true" }
                                 } }
                             } }
                         } }
@@ -1805,6 +1908,23 @@ namespace Generated
                                     } }
                                 } }
                             } }
+                        } },
+                    { "scumm", new Dictionary<string, object>
+                        {
+                        { "_scummVars", new Dictionary<string, object>
+                            {
+                            { "offset", "0x2824" }
+                            } },
+                        { "vm", new Dictionary<string, object>
+                            {
+                            { "offset", "0xC0" },
+                            { "inline", "true" },
+                            { "slot", new Dictionary<string, object>
+                                {
+                                { "offset", "0x14" },
+                                { "inline", "true" }
+                                } }
+                            } }
                         } }
                     } },
                 { "2.7.0", new Dictionary<string, object>
@@ -2001,6 +2121,23 @@ namespace Generated
                                             } }
                                         } }
                                     } }
+                                } }
+                            } }
+                        } },
+                    { "scumm", new Dictionary<string, object>
+                        {
+                        { "_scummVars", new Dictionary<string, object>
+                            {
+                            { "offset", "0x3430" }
+                            } },
+                        { "vm", new Dictionary<string, object>
+                            {
+                            { "offset", "0xC0" },
+                            { "inline", "true" },
+                            { "slot", new Dictionary<string, object>
+                                {
+                                { "offset", "0x14" },
+                                { "inline", "true" }
                                 } }
                             } }
                         } }
@@ -2201,6 +2338,23 @@ namespace Generated
                                     } }
                                 } }
                             } }
+                        } },
+                    { "scumm", new Dictionary<string, object>
+                        {
+                        { "_scummVars", new Dictionary<string, object>
+                            {
+                            { "offset", "0x3430" }
+                            } },
+                        { "vm", new Dictionary<string, object>
+                            {
+                            { "offset", "0xC0" },
+                            { "inline", "true" },
+                            { "slot", new Dictionary<string, object>
+                                {
+                                { "offset", "0x14" },
+                                { "inline", "true" }
+                                } }
+                            } }
                         } }
                     } },
                 { "2.8.0", new Dictionary<string, object>
@@ -2397,6 +2551,23 @@ namespace Generated
                                             } }
                                         } }
                                     } }
+                                } }
+                            } }
+                        } },
+                    { "scumm", new Dictionary<string, object>
+                        {
+                        { "_scummVars", new Dictionary<string, object>
+                            {
+                            { "offset", "0x3444" }
+                            } },
+                        { "vm", new Dictionary<string, object>
+                            {
+                            { "offset", "0xD0" },
+                            { "inline", "true" },
+                            { "slot", new Dictionary<string, object>
+                                {
+                                { "offset", "0x14" },
+                                { "inline", "true" }
                                 } }
                             } }
                         } }
@@ -2597,6 +2768,23 @@ namespace Generated
                                     } }
                                 } }
                             } }
+                        } },
+                    { "scumm", new Dictionary<string, object>
+                        {
+                        { "_scummVars", new Dictionary<string, object>
+                            {
+                            { "offset", "0x3444" }
+                            } },
+                        { "vm", new Dictionary<string, object>
+                            {
+                            { "offset", "0xD0" },
+                            { "inline", "true" },
+                            { "slot", new Dictionary<string, object>
+                                {
+                                { "offset", "0x14" },
+                                { "inline", "true" }
+                                } }
+                            } }
                         } }
                     } },
                 { "2.9.0", new Dictionary<string, object>
@@ -2795,6 +2983,23 @@ namespace Generated
                                     } }
                                 } }
                             } }
+                        } },
+                    { "scumm", new Dictionary<string, object>
+                        {
+                        { "_scummVars", new Dictionary<string, object>
+                            {
+                            { "offset", "0x35AC" }
+                            } },
+                        { "vm", new Dictionary<string, object>
+                            {
+                            { "offset", "0xD0" },
+                            { "inline", "true" },
+                            { "slot", new Dictionary<string, object>
+                                {
+                                { "offset", "0x14" },
+                                { "inline", "true" }
+                                } }
+                            } }
                         } }
                     } },
                 { "2.9.1", new Dictionary<string, object>
@@ -2991,6 +3196,23 @@ namespace Generated
                                             } }
                                         } }
                                     } }
+                                } }
+                            } }
+                        } },
+                    { "scumm", new Dictionary<string, object>
+                        {
+                        { "_scummVars", new Dictionary<string, object>
+                            {
+                            { "offset", "0x35AC" }
+                            } },
+                        { "vm", new Dictionary<string, object>
+                            {
+                            { "offset", "0xD0" },
+                            { "inline", "true" },
+                            { "slot", new Dictionary<string, object>
+                                {
+                                { "offset", "0x14" },
+                                { "inline", "true" }
                                 } }
                             } }
                         } }
@@ -3295,6 +3517,23 @@ namespace Generated
                                     } }
                                 } }
                             } }
+                        } },
+                    { "scumm", new Dictionary<string, object>
+                        {
+                        { "_scummVars", new Dictionary<string, object>
+                            {
+                            { "offset", "0x2898" }
+                            } },
+                        { "vm", new Dictionary<string, object>
+                            {
+                            { "offset", "0x110" },
+                            { "inline", "true" },
+                            { "slot", new Dictionary<string, object>
+                                {
+                                { "offset", "0x14" },
+                                { "inline", "true" }
+                                } }
+                            } }
                         } }
                     } },
                 { "2.1.1", new Dictionary<string, object>
@@ -3491,6 +3730,23 @@ namespace Generated
                                             } }
                                         } }
                                     } }
+                                } }
+                            } }
+                        } },
+                    { "scumm", new Dictionary<string, object>
+                        {
+                        { "_scummVars", new Dictionary<string, object>
+                            {
+                            { "offset", "0x2898" }
+                            } },
+                        { "vm", new Dictionary<string, object>
+                            {
+                            { "offset", "0x110" },
+                            { "inline", "true" },
+                            { "slot", new Dictionary<string, object>
+                                {
+                                { "offset", "0x14" },
+                                { "inline", "true" }
                                 } }
                             } }
                         } }
@@ -3691,6 +3947,23 @@ namespace Generated
                                     } }
                                 } }
                             } }
+                        } },
+                    { "scumm", new Dictionary<string, object>
+                        {
+                        { "_scummVars", new Dictionary<string, object>
+                            {
+                            { "offset", "0x2898" }
+                            } },
+                        { "vm", new Dictionary<string, object>
+                            {
+                            { "offset", "0x110" },
+                            { "inline", "true" },
+                            { "slot", new Dictionary<string, object>
+                                {
+                                { "offset", "0x14" },
+                                { "inline", "true" }
+                                } }
+                            } }
                         } }
                     } },
                 { "2.2.0", new Dictionary<string, object>
@@ -3887,6 +4160,23 @@ namespace Generated
                                             } }
                                         } }
                                     } }
+                                } }
+                            } }
+                        } },
+                    { "scumm", new Dictionary<string, object>
+                        {
+                        { "_scummVars", new Dictionary<string, object>
+                            {
+                            { "offset", "0x28A0" }
+                            } },
+                        { "vm", new Dictionary<string, object>
+                            {
+                            { "offset", "0x118" },
+                            { "inline", "true" },
+                            { "slot", new Dictionary<string, object>
+                                {
+                                { "offset", "0x14" },
+                                { "inline", "true" }
                                 } }
                             } }
                         } }
@@ -4087,6 +4377,23 @@ namespace Generated
                                     } }
                                 } }
                             } }
+                        } },
+                    { "scumm", new Dictionary<string, object>
+                        {
+                        { "_scummVars", new Dictionary<string, object>
+                            {
+                            { "offset", "0x28B0" }
+                            } },
+                        { "vm", new Dictionary<string, object>
+                            {
+                            { "offset", "0x128" },
+                            { "inline", "true" },
+                            { "slot", new Dictionary<string, object>
+                                {
+                                { "offset", "0x14" },
+                                { "inline", "true" }
+                                } }
+                            } }
                         } }
                     } },
                 { "2.5.1", new Dictionary<string, object>
@@ -4283,6 +4590,23 @@ namespace Generated
                                             } }
                                         } }
                                     } }
+                                } }
+                            } }
+                        } },
+                    { "scumm", new Dictionary<string, object>
+                        {
+                        { "_scummVars", new Dictionary<string, object>
+                            {
+                            { "offset", "0x28B0" }
+                            } },
+                        { "vm", new Dictionary<string, object>
+                            {
+                            { "offset", "0x128" },
+                            { "inline", "true" },
+                            { "slot", new Dictionary<string, object>
+                                {
+                                { "offset", "0x14" },
+                                { "inline", "true" }
                                 } }
                             } }
                         } }
@@ -4483,6 +4807,23 @@ namespace Generated
                                     } }
                                 } }
                             } }
+                        } },
+                    { "scumm", new Dictionary<string, object>
+                        {
+                        { "_scummVars", new Dictionary<string, object>
+                            {
+                            { "offset", "0x28C0" }
+                            } },
+                        { "vm", new Dictionary<string, object>
+                            {
+                            { "offset", "0x12C" },
+                            { "inline", "true" },
+                            { "slot", new Dictionary<string, object>
+                                {
+                                { "offset", "0x14" },
+                                { "inline", "true" }
+                                } }
+                            } }
                         } }
                     } },
                 { "2.6.1", new Dictionary<string, object>
@@ -4679,6 +5020,23 @@ namespace Generated
                                             } }
                                         } }
                                     } }
+                                } }
+                            } }
+                        } },
+                    { "scumm", new Dictionary<string, object>
+                        {
+                        { "_scummVars", new Dictionary<string, object>
+                            {
+                            { "offset", "0x28C0" }
+                            } },
+                        { "vm", new Dictionary<string, object>
+                            {
+                            { "offset", "0x12C" },
+                            { "inline", "true" },
+                            { "slot", new Dictionary<string, object>
+                                {
+                                { "offset", "0x14" },
+                                { "inline", "true" }
                                 } }
                             } }
                         } }
@@ -4879,6 +5237,23 @@ namespace Generated
                                     } }
                                 } }
                             } }
+                        } },
+                    { "scumm", new Dictionary<string, object>
+                        {
+                        { "_scummVars", new Dictionary<string, object>
+                            {
+                            { "offset", "0x36E0" }
+                            } },
+                        { "vm", new Dictionary<string, object>
+                            {
+                            { "offset", "0x12C" },
+                            { "inline", "true" },
+                            { "slot", new Dictionary<string, object>
+                                {
+                                { "offset", "0x14" },
+                                { "inline", "true" }
+                                } }
+                            } }
                         } }
                     } },
                 { "2.7.1", new Dictionary<string, object>
@@ -5075,6 +5450,23 @@ namespace Generated
                                             } }
                                         } }
                                     } }
+                                } }
+                            } }
+                        } },
+                    { "scumm", new Dictionary<string, object>
+                        {
+                        { "_scummVars", new Dictionary<string, object>
+                            {
+                            { "offset", "0x36E0" }
+                            } },
+                        { "vm", new Dictionary<string, object>
+                            {
+                            { "offset", "0x12C" },
+                            { "inline", "true" },
+                            { "slot", new Dictionary<string, object>
+                                {
+                                { "offset", "0x14" },
+                                { "inline", "true" }
                                 } }
                             } }
                         } }
@@ -5275,6 +5667,23 @@ namespace Generated
                                     } }
                                 } }
                             } }
+                        } },
+                    { "scumm", new Dictionary<string, object>
+                        {
+                        { "_scummVars", new Dictionary<string, object>
+                            {
+                            { "offset", "0x36F8" }
+                            } },
+                        { "vm", new Dictionary<string, object>
+                            {
+                            { "offset", "0x140" },
+                            { "inline", "true" },
+                            { "slot", new Dictionary<string, object>
+                                {
+                                { "offset", "0x14" },
+                                { "inline", "true" }
+                                } }
+                            } }
                         } }
                     } },
                 { "2.8.1", new Dictionary<string, object>
@@ -5471,6 +5880,23 @@ namespace Generated
                                             } }
                                         } }
                                     } }
+                                } }
+                            } }
+                        } },
+                    { "scumm", new Dictionary<string, object>
+                        {
+                        { "_scummVars", new Dictionary<string, object>
+                            {
+                            { "offset", "0x36F8" }
+                            } },
+                        { "vm", new Dictionary<string, object>
+                            {
+                            { "offset", "0x140" },
+                            { "inline", "true" },
+                            { "slot", new Dictionary<string, object>
+                                {
+                                { "offset", "0x14" },
+                                { "inline", "true" }
                                 } }
                             } }
                         } }
@@ -5671,6 +6097,23 @@ namespace Generated
                                     } }
                                 } }
                             } }
+                        } },
+                    { "scumm", new Dictionary<string, object>
+                        {
+                        { "_scummVars", new Dictionary<string, object>
+                            {
+                            { "offset", "0x3868" }
+                            } },
+                        { "vm", new Dictionary<string, object>
+                            {
+                            { "offset", "0x148" },
+                            { "inline", "true" },
+                            { "slot", new Dictionary<string, object>
+                                {
+                                { "offset", "0x14" },
+                                { "inline", "true" }
+                                } }
+                            } }
                         } }
                     } },
                 { "2.9.1", new Dictionary<string, object>
@@ -5867,6 +6310,23 @@ namespace Generated
                                             } }
                                         } }
                                     } }
+                                } }
+                            } }
+                        } },
+                    { "scumm", new Dictionary<string, object>
+                        {
+                        { "_scummVars", new Dictionary<string, object>
+                            {
+                            { "offset", "0x3868" }
+                            } },
+                        { "vm", new Dictionary<string, object>
+                            {
+                            { "offset", "0x148" },
+                            { "inline", "true" },
+                            { "slot", new Dictionary<string, object>
+                                {
+                                { "offset", "0x14" },
+                                { "inline", "true" }
                                 } }
                             } }
                         } }

@@ -6,6 +6,8 @@ public class Mohawk_Riven : ScummVM { }
 
 public class SCI : ScummVM { }
 
+public class Scumm : ScummVM { }
+
 public class Sword1 : ScummVM { }
 
 public class Toon : ScummVM { }

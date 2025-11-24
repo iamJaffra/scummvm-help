@@ -38,11 +38,12 @@ public class ScummVM
     protected readonly MemoryWatcherList watchers = new MemoryWatcherList();
     internal static IDictionary<string, dynamic> Current => script.State.Data;
 
+    // 
     private readonly Dictionary<string, object> rootDict;
 
-    private Func<dynamic, bool> tryLoad;
-    private CancellationTokenSource _tryLoadCts;
-    private volatile bool loaded = false;
+    // OnEngineReady
+    private Func<bool> onEngineReady;
+    private bool engineInitCompleted = false;
 
     // Debug flags
     internal bool logResolvedPaths = false;
@@ -132,6 +133,10 @@ public class ScummVM
         
         version = GetVersion(Game);
         g_engine = GetEnginePointer(Game);
+
+        this["g_engine"] = is64Bit
+            ? Watch<ulong>(g_engine)
+            : Watch<uint>(g_engine);
     }
 
     protected string GetVersion(Process game)
@@ -306,16 +311,25 @@ public class ScummVM
         enginePrev = engineCurr;
         engineCurr = Game.ReadPointer(g_engine);
 
-        // Reattach script when returning to the ScummVM main menu
         if (enginePrev != IntPtr.Zero && engineCurr == IntPtr.Zero)
         {
-            Dbg.Info("Reattaching...");
+            Dbg.Info("Waiting for ScummVM engine...");
             Dbg.Info();
 
-            script.GetType().GetField(
-                "_game",
-                BindingFlags.NonPublic | BindingFlags.Instance
-            ).SetValue(script, null); 
+            engineInitCompleted = false;
+        }
+
+        if (OnEngineReady != null && !engineInitCompleted && engineCurr != IntPtr.Zero)
+        {
+            bool success = OnEngineReady();
+
+            if (success)
+            {
+                engineInitCompleted = true;
+            }
+
+            Dbg.Info($"OnEngineReady() returned {success}.");
+            Dbg.Info();
         }
         else
         {
@@ -328,7 +342,14 @@ public class ScummVM
                 {
                     if (watcher.Changed)
                     {
-                        Dbg.Info($"{watcher.Name}: {watcher.Old} -> {watcher.Current}");
+                        if (watcher.Name == "g_engine")
+                        {
+                            Dbg.Info($"{watcher.Name}: 0x{watcher.Old:X} -> 0x{watcher.Current:X}");
+                        }
+                        else
+                        {
+                            Dbg.Info($"{watcher.Name}: {watcher.Old} -> {watcher.Current}");
+                        }
                     }
                 }
             }
@@ -525,71 +546,28 @@ public class ScummVM
         }
     }
 
-    public Func<dynamic, bool> TryLoad
+    public string GameName
     {
-        get => tryLoad;
+        get
+        {
+            if (is64Bit)
+            {
+                return ReadString(g_engine, 0x38 + 0x8);
+            }
+            else 
+            {
+                return ReadString(g_engine, 0x1C + 0x4);
+            }
+        }
+    }
+
+    public Func<bool> OnEngineReady
+    {
+        get => onEngineReady;
         set
         {
-            tryLoad = value;
-            loaded = false;
-
-            try
-            {
-                _tryLoadCts?.Cancel();
-                _tryLoadCts?.Dispose();
-                _tryLoadCts = null;
-            }
-            catch { }
-
-            if (value == null)
-            {
-                return;
-            }
-
-            _tryLoadCts = new CancellationTokenSource();
-            var token = _tryLoadCts.Token;
-
-            Task.Run(async () =>
-            {
-                try
-                {
-                    while (!token.IsCancellationRequested && !loaded)
-                    {
-                        var g = is64Bit
-                            ? Game.ReadValue<ulong>(g_engine)
-                            : Game.ReadValue<uint>(g_engine);
-
-                        if (g != 0)
-                        {
-                            try
-                            {
-                                bool success = tryLoad!(this);
-                                Dbg.Info($"TryLoad returned {success}.");
-                                if (success)
-                                {
-                                    loaded = true;
-                                    break;
-                                }
-                            }
-                            catch (Exception ex)
-                            {
-                                Dbg.Info($"TryLoad threw: {ex.GetType().Name}: {ex.Message}");
-                            }
-                        }
-                        else
-                        {
-                            Dbg.Info("Waiting for game engine to be running...");
-                        }
-
-                        try { await Task.Delay(3000, token); }
-                        catch (TaskCanceledException) { break; }
-                    }
-                }
-                finally
-                {
-                    // Dbg.Info($"[TryLoad] Polling ended (task {Task.CurrentId}). loaded={loaded}");
-                }
-            }, token);
+            onEngineReady = value;
+            engineInitCompleted = false;
         }
     }
 }
