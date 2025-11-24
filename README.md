@@ -128,6 +128,8 @@ The following debug flags exist (set them in `startup{}`):
 - [Phantasmagoria](https://raw.githubusercontent.com/iamJaffra/ASLs/refs/heads/main/Phantasmagoria.asl)
 - [Shivers](https://raw.githubusercontent.com/iamJaffra/ASLs/refs/heads/main/Shivers.asl)
 - [Torin's Passage](https://raw.githubusercontent.com/iamJaffra/ASLs/refs/heads/main/TorinsPassage.asl)
+#### Scumm
+- [Loom](https://raw.githubusercontent.com/iamJaffra/ASLs/refs/heads/main/Loom.asl)
 
 ## Supported engines (work in progress)
 
@@ -135,4 +137,4 @@ The following debug flags exist (set them in `startup{}`):
 - Mohawk_Myst
 - Mohawk_Riven
 - SCI
-- Scumm (forthcoming)
+- Scumm
