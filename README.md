@@ -58,7 +58,7 @@ var dp = new DeepPointer((IntPtr)vars.ScummVM.GEngine, 0x50, 0x14);
 
 ### Memory Utilities 
 
-Useful as `vars.ScummVM.GEngine` may be, the main advantage the library offers is that pointer paths can be built using ScummVM class field names. 
+The main advantage the library offers is the creation of pointer paths using ScummVM class field names. 
 
 For this, the API exposes the following methods:
 
@@ -132,9 +132,9 @@ The following debug flags exist (set them in `startup{}`):
 - [Loom](https://raw.githubusercontent.com/iamJaffra/ASLs/refs/heads/main/Loom.asl)
 
 ## Supported engines (work in progress)
-
 - Groovie
 - Mohawk_Myst
 - Mohawk_Riven
 - SCI
 - Scumm
+- Sword1
