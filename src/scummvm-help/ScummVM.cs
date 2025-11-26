@@ -119,7 +119,7 @@ public class ScummVM
         }
     }
 
-    public void Init()
+    public virtual void Init()
     {
         if (script != null)
         {
@@ -135,8 +135,8 @@ public class ScummVM
         g_engine = GetEnginePointer(Game);
 
         this["g_engine"] = is64Bit
-            ? Watch<ulong>(g_engine)
-            : Watch<uint>(g_engine);
+            ? new MemoryWatcher<ulong>(new DeepPointer(g_engine))
+            : new MemoryWatcher<uint>(new DeepPointer(g_engine));
     }
 
     protected string GetVersion(Process game)
@@ -226,11 +226,14 @@ public class ScummVM
         var module = game.MainModule;
         var scanner = new SignatureScanner(game, module.BaseAddress, module.ModuleMemorySize);
 
+        var target = is64Bit
+            ? new SigScanTarget(3, "48 8D 0D")
+            : new SigScanTarget(3, "C7 04 24");
+        
+        var results = scanner.ScanAll(target);
+
         if (is64Bit)
         {
-            var trg = new SigScanTarget(3, "48 8D 0D");
-            var results = scanner.ScanAll(trg);
-
             foreach (var address in results)
             {
                 byte[] s = game.ReadBytes(address + 0x4 + game.ReadValue<int>(address), wBytes.Length);
@@ -255,25 +258,19 @@ public class ScummVM
                                 b[2] == 0x3D)
                             {
                                 int rel = game.ReadValue<int>((IntPtr)addr + 3);
-                                long g_engineAddr = addr + 7 + rel;
+                                IntPtr g_engineAddr = (IntPtr)(addr + 7 + rel);
 
-                                Dbg.Info($"  => g_engine found at 0x{g_engineAddr:X}");
-                                Dbg.Info();
-                                Dbg.Info("  => Assigned g_engine pointer to vars.ScummVM.GEngine");
-                                Dbg.Info();
+                                EnginePointerFoundMessage(g_engineAddr);
 
-                                return (IntPtr)g_engineAddr;
+                                return g_engineAddr;
                             }
                         }
                     }
                 }
             }
         }
-        else if (!is64Bit)
+        else
         {
-            var trg = new SigScanTarget(3, "C7 04 24");
-            var results = scanner.ScanAll(trg);
-
             foreach (var address in results)
             {
                 byte[] s = game.ReadBytes(game.ReadPointer(address), wBytes.Length);
@@ -288,14 +285,11 @@ public class ScummVM
                         byte[] b = game.ReadBytes((IntPtr)addr, 2);
                         if (b[0] == 0x89 && b[1] == 0x1D)
                         {
-                            int g_engineAddr = game.ReadValue<int>((IntPtr)addr + 2);
+                            IntPtr g_engineAddr = (IntPtr)game.ReadValue<int>((IntPtr)addr + 2);
 
-                            Dbg.Info("  => g_engine found at 0x" + g_engineAddr.ToString("X"));
-                            Dbg.Info();
-                            Dbg.Info("  => Assigned g_engine pointer to vars.ScummVM.GEngine");
-                            Dbg.Info();
+                            EnginePointerFoundMessage(g_engineAddr);
 
-                            return (IntPtr)g_engineAddr;
+                            return g_engineAddr;
                         }
                     }
                 }
@@ -304,6 +298,20 @@ public class ScummVM
 
         Dbg.Info("  => g_engine not found.");
         return IntPtr.Zero;
+    }
+
+    protected static bool BytesEqual(Process game, IntPtr address, byte[] expected)
+    {
+        byte[] actual = game.ReadBytes(address, expected.Length);
+        return actual != null && actual.SequenceEqual(expected);
+    }
+
+    protected void EnginePointerFoundMessage(IntPtr pointer)
+    {
+        Dbg.Info($"  => g_engine found at 0x{pointer.ToInt64():X}");
+        Dbg.Info();
+        Dbg.Info($"  => Assigned g_engine pointer to vars.ScummVM.GEngine");
+        Dbg.Info();
     }
 
     public void Update()
@@ -401,36 +409,36 @@ public class ScummVM
 
     public MemoryWatcher<T> Watch<T>(params object[] path) where T : unmanaged
     {
-        int[] offsets = ResolvePath(path);
-        return new MemoryWatcher<T>(new DeepPointer(g_engine, offsets));
+        var (baseAddress, offsets) = ResolvePath(path);
+        return new MemoryWatcher<T>(new DeepPointer(baseAddress, offsets));
     }
 
     public MemoryWatcher WatchBytes(int length, params object[] path)
     {
-        int[] offsets = ResolvePath(path);
-        return new ByteArrayWatcher(new DeepPointer(g_engine, offsets), length);
+        var (baseAddress, offsets) = ResolvePath(path);
+        return new ByteArrayWatcher(new DeepPointer(baseAddress, offsets), length);
     }
 
     public T Read<T>(params object[] path) where T : unmanaged
     {
-        int[] offsets = ResolvePath(path);
-        return new DeepPointer(g_engine, offsets).Deref<T>(Game);
+        var (baseAddress, offsets) = ResolvePath(path);
+        return new DeepPointer(baseAddress, offsets).Deref<T>(Game);
     }
 
     public string ReadString(params object[] path)
     {
-        int[] offsets = ResolvePath(path);
+        var (baseAddress, offsets) = ResolvePath(path);
         offsets = offsets.Concat([0x0]).ToArray();
-        return new DeepPointer(g_engine, offsets).DerefString(Game, 32);
+        return new DeepPointer(baseAddress, offsets).DerefString(Game, 32);
     }
 
     public string ReadString(int length, params object[] path)
     {
-        int[] offsets = ResolvePath(path);
-        return new DeepPointer(g_engine, offsets).DerefString(Game, length);
+        var (baseAddress, offsets) = ResolvePath(path);
+        return new DeepPointer(baseAddress, offsets).DerefString(Game, length);
     }
 
-    private int[] ResolvePath(params object[] path)
+    protected virtual (IntPtr baseAddress, int[] offsets) ResolvePath(params object[] path)
     {
         if (path == null || path.Length == 0)
             throw new ArgumentException("Path must contain at least one element.");
@@ -495,7 +503,7 @@ public class ScummVM
             Dbg.Info($"Resolved path: 0x{GEngine.ToString("X")}, " + string.Join(", ", offsets.Select(n => $"0x{n:X}")));
         }
         
-        return offsets;
+        return (g_engine, offsets);
     }
 
     private static int ParseOffset(string raw)
