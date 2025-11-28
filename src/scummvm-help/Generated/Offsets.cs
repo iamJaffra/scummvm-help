@@ -23,7 +23,8 @@ namespace Generated
                                 } },
                             { "_variables", new Dictionary<string, object>
                                 {
-                                { "offset", "0x1A4" }
+                                { "offset", "0x1A4" },
+                                { "inline", "true" }
                                 } },
                             { "_videoRef", new Dictionary<string, object>
                                 {
@@ -45,7 +46,8 @@ namespace Generated
                                 } },
                             { "_variables", new Dictionary<string, object>
                                 {
-                                { "offset", "0x1A0" }
+                                { "offset", "0x1A0" },
+                                { "inline", "true" }
                                 } },
                             { "_videoRef", new Dictionary<string, object>
                                 {
@@ -242,7 +244,8 @@ namespace Generated
                                 } },
                             { "_variables", new Dictionary<string, object>
                                 {
-                                { "offset", "0x380" }
+                                { "offset", "0x380" },
+                                { "inline", "true" }
                                 } },
                             { "_videoRef", new Dictionary<string, object>
                                 {
@@ -457,7 +460,8 @@ namespace Generated
                                 } },
                             { "_variables", new Dictionary<string, object>
                                 {
-                                { "offset", "0x380" }
+                                { "offset", "0x380" },
+                                { "inline", "true" }
                                 } },
                             { "_videoRef", new Dictionary<string, object>
                                 {
@@ -672,7 +676,8 @@ namespace Generated
                                 } },
                             { "_variables", new Dictionary<string, object>
                                 {
-                                { "offset", "0x380" }
+                                { "offset", "0x380" },
+                                { "inline", "true" }
                                 } },
                             { "_videoRef", new Dictionary<string, object>
                                 {
@@ -887,7 +892,8 @@ namespace Generated
                                 } },
                             { "_variables", new Dictionary<string, object>
                                 {
-                                { "offset", "0x380" }
+                                { "offset", "0x380" },
+                                { "inline", "true" }
                                 } },
                             { "_videoRef", new Dictionary<string, object>
                                 {
@@ -1102,7 +1108,8 @@ namespace Generated
                                 } },
                             { "_variables", new Dictionary<string, object>
                                 {
-                                { "offset", "0x380" }
+                                { "offset", "0x380" },
+                                { "inline", "true" }
                                 } },
                             { "_videoRef", new Dictionary<string, object>
                                 {
@@ -1317,7 +1324,8 @@ namespace Generated
                                 } },
                             { "_variables", new Dictionary<string, object>
                                 {
-                                { "offset", "0x380" }
+                                { "offset", "0x380" },
+                                { "inline", "true" }
                                 } },
                             { "_videoRef", new Dictionary<string, object>
                                 {
@@ -1532,7 +1540,8 @@ namespace Generated
                                 } },
                             { "_variables", new Dictionary<string, object>
                                 {
-                                { "offset", "0x384" }
+                                { "offset", "0x384" },
+                                { "inline", "true" }
                                 } },
                             { "_videoRef", new Dictionary<string, object>
                                 {
@@ -1747,7 +1756,8 @@ namespace Generated
                                 } },
                             { "_variables", new Dictionary<string, object>
                                 {
-                                { "offset", "0x384" }
+                                { "offset", "0x384" },
+                                { "inline", "true" }
                                 } },
                             { "_videoRef", new Dictionary<string, object>
                                 {
@@ -1962,7 +1972,8 @@ namespace Generated
                                 } },
                             { "_variables", new Dictionary<string, object>
                                 {
-                                { "offset", "0x384" }
+                                { "offset", "0x384" },
+                                { "inline", "true" }
                                 } },
                             { "_videoRef", new Dictionary<string, object>
                                 {
@@ -2177,7 +2188,8 @@ namespace Generated
                                 } },
                             { "_variables", new Dictionary<string, object>
                                 {
-                                { "offset", "0x384" }
+                                { "offset", "0x384" },
+                                { "inline", "true" }
                                 } },
                             { "_videoRef", new Dictionary<string, object>
                                 {
@@ -2392,7 +2404,8 @@ namespace Generated
                                 } },
                             { "_variables", new Dictionary<string, object>
                                 {
-                                { "offset", "0x384" }
+                                { "offset", "0x384" },
+                                { "inline", "true" }
                                 } },
                             { "_videoRef", new Dictionary<string, object>
                                 {
@@ -2607,7 +2620,8 @@ namespace Generated
                                 } },
                             { "_variables", new Dictionary<string, object>
                                 {
-                                { "offset", "0x384" }
+                                { "offset", "0x384" },
+                                { "inline", "true" }
                                 } },
                             { "_videoRef", new Dictionary<string, object>
                                 {
@@ -2822,7 +2836,8 @@ namespace Generated
                                 } },
                             { "_variables", new Dictionary<string, object>
                                 {
-                                { "offset", "0x384" }
+                                { "offset", "0x384" },
+                                { "inline", "true" }
                                 } },
                             { "_videoRef", new Dictionary<string, object>
                                 {
@@ -3037,7 +3052,8 @@ namespace Generated
                                 } },
                             { "_variables", new Dictionary<string, object>
                                 {
-                                { "offset", "0x384" }
+                                { "offset", "0x384" },
+                                { "inline", "true" }
                                 } },
                             { "_videoRef", new Dictionary<string, object>
                                 {
@@ -3356,7 +3372,8 @@ namespace Generated
                                 } },
                             { "_variables", new Dictionary<string, object>
                                 {
-                                { "offset", "0x46C" }
+                                { "offset", "0x46C" },
+                                { "inline", "true" }
                                 } },
                             { "_videoRef", new Dictionary<string, object>
                                 {
@@ -3571,7 +3588,8 @@ namespace Generated
                                 } },
                             { "_variables", new Dictionary<string, object>
                                 {
-                                { "offset", "0x46C" }
+                                { "offset", "0x46C" },
+                                { "inline", "true" }
                                 } },
                             { "_videoRef", new Dictionary<string, object>
                                 {
@@ -3786,7 +3804,8 @@ namespace Generated
                                 } },
                             { "_variables", new Dictionary<string, object>
                                 {
-                                { "offset", "0x46C" }
+                                { "offset", "0x46C" },
+                                { "inline", "true" }
                                 } },
                             { "_videoRef", new Dictionary<string, object>
                                 {
@@ -4001,7 +4020,8 @@ namespace Generated
                                 } },
                             { "_variables", new Dictionary<string, object>
                                 {
-                                { "offset", "0x46C" }
+                                { "offset", "0x46C" },
+                                { "inline", "true" }
                                 } },
                             { "_videoRef", new Dictionary<string, object>
                                 {
@@ -4216,7 +4236,8 @@ namespace Generated
                                 } },
                             { "_variables", new Dictionary<string, object>
                                 {
-                                { "offset", "0x46C" }
+                                { "offset", "0x46C" },
+                                { "inline", "true" }
                                 } },
                             { "_videoRef", new Dictionary<string, object>
                                 {
@@ -4431,7 +4452,8 @@ namespace Generated
                                 } },
                             { "_variables", new Dictionary<string, object>
                                 {
-                                { "offset", "0x46C" }
+                                { "offset", "0x46C" },
+                                { "inline", "true" }
                                 } },
                             { "_videoRef", new Dictionary<string, object>
                                 {
@@ -4646,7 +4668,8 @@ namespace Generated
                                 } },
                             { "_variables", new Dictionary<string, object>
                                 {
-                                { "offset", "0x474" }
+                                { "offset", "0x474" },
+                                { "inline", "true" }
                                 } },
                             { "_videoRef", new Dictionary<string, object>
                                 {
@@ -4861,7 +4884,8 @@ namespace Generated
                                 } },
                             { "_variables", new Dictionary<string, object>
                                 {
-                                { "offset", "0x474" }
+                                { "offset", "0x474" },
+                                { "inline", "true" }
                                 } },
                             { "_videoRef", new Dictionary<string, object>
                                 {
@@ -5076,7 +5100,8 @@ namespace Generated
                                 } },
                             { "_variables", new Dictionary<string, object>
                                 {
-                                { "offset", "0x474" }
+                                { "offset", "0x474" },
+                                { "inline", "true" }
                                 } },
                             { "_videoRef", new Dictionary<string, object>
                                 {
@@ -5291,7 +5316,8 @@ namespace Generated
                                 } },
                             { "_variables", new Dictionary<string, object>
                                 {
-                                { "offset", "0x474" }
+                                { "offset", "0x474" },
+                                { "inline", "true" }
                                 } },
                             { "_videoRef", new Dictionary<string, object>
                                 {
@@ -5506,7 +5532,8 @@ namespace Generated
                                 } },
                             { "_variables", new Dictionary<string, object>
                                 {
-                                { "offset", "0x474" }
+                                { "offset", "0x474" },
+                                { "inline", "true" }
                                 } },
                             { "_videoRef", new Dictionary<string, object>
                                 {
@@ -5721,7 +5748,8 @@ namespace Generated
                                 } },
                             { "_variables", new Dictionary<string, object>
                                 {
-                                { "offset", "0x474" }
+                                { "offset", "0x474" },
+                                { "inline", "true" }
                                 } },
                             { "_videoRef", new Dictionary<string, object>
                                 {
@@ -5936,7 +5964,8 @@ namespace Generated
                                 } },
                             { "_variables", new Dictionary<string, object>
                                 {
-                                { "offset", "0x474" }
+                                { "offset", "0x474" },
+                                { "inline", "true" }
                                 } },
                             { "_videoRef", new Dictionary<string, object>
                                 {
@@ -6151,7 +6180,8 @@ namespace Generated
                                 } },
                             { "_variables", new Dictionary<string, object>
                                 {
-                                { "offset", "0x474" }
+                                { "offset", "0x474" },
+                                { "inline", "true" }
                                 } },
                             { "_videoRef", new Dictionary<string, object>
                                 {

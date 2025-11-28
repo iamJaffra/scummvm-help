@@ -8,6 +8,7 @@ scummvm:
             offset: 0xD
           _variables:
             offset: 0x1A4
+            inline: true
           _videoRef:
             offset: 0x784
     2.0.0:
@@ -18,6 +19,7 @@ scummvm:
             offset: 0x9
           _variables:
             offset: 0x1A0
+            inline: true
           _videoRef:
             offset: 0x780
       mohawk_myst:
@@ -119,6 +121,7 @@ scummvm:
             offset: 0x9
           _variables:
             offset: 0x380
+            inline: true
           _videoRef:
             offset: 0x928
       mohawk_myst:
@@ -230,6 +233,7 @@ scummvm:
             offset: 0x9
           _variables:
             offset: 0x380
+            inline: true
           _videoRef:
             offset: 0x960
       mohawk_myst:
@@ -341,6 +345,7 @@ scummvm:
             offset: 0x9
           _variables:
             offset: 0x380
+            inline: true
           _videoRef:
             offset: 0x960
       mohawk_myst:
@@ -452,6 +457,7 @@ scummvm:
             offset: 0x9
           _variables:
             offset: 0x380
+            inline: true
           _videoRef:
             offset: 0x960
       mohawk_myst:
@@ -563,6 +569,7 @@ scummvm:
             offset: 0x9
           _variables:
             offset: 0x380
+            inline: true
           _videoRef:
             offset: 0x960
       mohawk_myst:
@@ -674,6 +681,7 @@ scummvm:
             offset: 0x9
           _variables:
             offset: 0x380
+            inline: true
           _videoRef:
             offset: 0x960
       mohawk_myst:
@@ -785,6 +793,7 @@ scummvm:
             offset: 0x9
           _variables:
             offset: 0x384
+            inline: true
           _videoRef:
             offset: 0x964
       mohawk_myst:
@@ -896,6 +905,7 @@ scummvm:
             offset: 0x9
           _variables:
             offset: 0x384
+            inline: true
           _videoRef:
             offset: 0x964
       mohawk_myst:
@@ -1007,6 +1017,7 @@ scummvm:
             offset: 0x9
           _variables:
             offset: 0x384
+            inline: true
           _videoRef:
             offset: 0x964
       mohawk_myst:
@@ -1118,6 +1129,7 @@ scummvm:
             offset: 0x9
           _variables:
             offset: 0x384
+            inline: true
           _videoRef:
             offset: 0x964
       mohawk_myst:
@@ -1229,6 +1241,7 @@ scummvm:
             offset: 0x9
           _variables:
             offset: 0x384
+            inline: true
           _videoRef:
             offset: 0x964
       mohawk_myst:
@@ -1340,6 +1353,7 @@ scummvm:
             offset: 0x9
           _variables:
             offset: 0x384
+            inline: true
           _videoRef:
             offset: 0x964
       mohawk_myst:
@@ -1451,6 +1465,7 @@ scummvm:
             offset: 0x9
           _variables:
             offset: 0x384
+            inline: true
           _videoRef:
             offset: 0x964
       mohawk_myst:
@@ -1562,6 +1577,7 @@ scummvm:
             offset: 0x9
           _variables:
             offset: 0x384
+            inline: true
           _videoRef:
             offset: 0x964
       mohawk_myst:
@@ -1725,6 +1741,7 @@ scummvm:
             offset: 0xD
           _variables:
             offset: 0x46C
+            inline: true
           _videoRef:
             offset: 0xA50
       mohawk_myst:
@@ -1836,6 +1853,7 @@ scummvm:
             offset: 0xD
           _variables:
             offset: 0x46C
+            inline: true
           _videoRef:
             offset: 0xA50
       mohawk_myst:
@@ -1947,6 +1965,7 @@ scummvm:
             offset: 0xD
           _variables:
             offset: 0x46C
+            inline: true
           _videoRef:
             offset: 0xA50
       mohawk_myst:
@@ -2058,6 +2077,7 @@ scummvm:
             offset: 0xD
           _variables:
             offset: 0x46C
+            inline: true
           _videoRef:
             offset: 0xA50
       mohawk_myst:
@@ -2169,6 +2189,7 @@ scummvm:
             offset: 0xD
           _variables:
             offset: 0x46C
+            inline: true
           _videoRef:
             offset: 0xA50
       mohawk_myst:
@@ -2280,6 +2301,7 @@ scummvm:
             offset: 0xD
           _variables:
             offset: 0x46C
+            inline: true
           _videoRef:
             offset: 0xA50
       mohawk_myst:
@@ -2391,6 +2413,7 @@ scummvm:
             offset: 0xD
           _variables:
             offset: 0x474
+            inline: true
           _videoRef:
             offset: 0xA58
       mohawk_myst:
@@ -2502,6 +2525,7 @@ scummvm:
             offset: 0xD
           _variables:
             offset: 0x474
+            inline: true
           _videoRef:
             offset: 0xA58
       mohawk_myst:
@@ -2613,6 +2637,7 @@ scummvm:
             offset: 0xD
           _variables:
             offset: 0x474
+            inline: true
           _videoRef:
             offset: 0xA58
       mohawk_myst:
@@ -2724,6 +2749,7 @@ scummvm:
             offset: 0xD
           _variables:
             offset: 0x474
+            inline: true
           _videoRef:
             offset: 0xA58
       mohawk_myst:
@@ -2835,6 +2861,7 @@ scummvm:
             offset: 0xD
           _variables:
             offset: 0x474
+            inline: true
           _videoRef:
             offset: 0xA58
       mohawk_myst:
@@ -2946,6 +2973,7 @@ scummvm:
             offset: 0xD
           _variables:
             offset: 0x474
+            inline: true
           _videoRef:
             offset: 0xA58
       mohawk_myst:
@@ -3057,6 +3085,7 @@ scummvm:
             offset: 0xD
           _variables:
             offset: 0x474
+            inline: true
           _videoRef:
             offset: 0xA58
       mohawk_myst:
@@ -3168,6 +3197,7 @@ scummvm:
             offset: 0xD
           _variables:
             offset: 0x474
+            inline: true
           _videoRef:
             offset: 0xA58
       mohawk_myst:
