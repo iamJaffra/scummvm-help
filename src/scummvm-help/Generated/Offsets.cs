@@ -10,6 +10,28 @@ namespace Generated
             {
             { "32-bit", new Dictionary<string, object>
                 {
+                { "1.8.0", new Dictionary<string, object>
+                    {
+                    { "groovie", new Dictionary<string, object>
+                        {
+                        { "_script", new Dictionary<string, object>
+                            {
+                            { "offset", "0x58" },
+                            { "_lastCursor", new Dictionary<string, object>
+                                {
+                                { "offset", "0xD" }
+                                } },
+                            { "_variables", new Dictionary<string, object>
+                                {
+                                { "offset", "0x1A4" }
+                                } },
+                            { "_videoRef", new Dictionary<string, object>
+                                {
+                                { "offset", "0x784" }
+                                } }
+                            } }
+                        } }
+                    } },
                 { "2.0.0", new Dictionary<string, object>
                     {
                     { "groovie", new Dictionary<string, object>

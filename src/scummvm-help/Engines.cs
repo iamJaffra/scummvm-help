@@ -4,7 +4,68 @@ using System.Linq;
 using System;
 using Generated;
 
-public class Groovie : ScummVM { }
+public class Groovie : ScummVM 
+{
+    protected override IntPtr GetEnginePointer(Process game)
+    {
+        if (game.MainModule.ModuleName == "t7g.exe")
+        {
+            Dbg.Info("Scanning for g_engine...");
+
+            byte[] wBytes = [
+                0x53, 0x6F, 0x75, 0x6E, 0x64, 0x20, 0x69, 0x6E,
+                0x69, 0x74, 0x69, 0x61, 0x6C, 0x69, 0x7A, 0x61,
+                0x74, 0x69, 0x6F, 0x6E, 0x20, 0x66, 0x61, 0x69,
+                0x6C, 0x65, 0x64, 0x2E, 0x20, 0x54, 0x68, 0x69,
+                0x73, 0x20, 0x6D, 0x61, 0x79, 0x20, 0x63, 0x61,
+                0x75, 0x73, 0x65, 0x20, 0x73, 0x65, 0x76, 0x65,
+                0x72, 0x65, 0x20, 0x70, 0x72, 0x6F, 0x62, 0x6C,
+                0x65, 0x6D, 0x73, 0x20, 0x69, 0x6E, 0x20, 0x73,
+                0x6F, 0x6D, 0x65, 0x20, 0x67, 0x61, 0x6D, 0x65,
+                0x73
+            ];
+
+            var module = game.MainModule;
+            var scanner = new SignatureScanner(game, module.BaseAddress, module.ModuleMemorySize);
+
+            var target = new SigScanTarget(3, "75 0D 68");
+
+            var results = scanner.ScanAll(target);
+
+            foreach (var address in results)
+            {
+                byte[] s = game.ReadBytes(game.ReadPointer(address), wBytes.Length);
+
+                if (s != null && s.SequenceEqual(wBytes))
+                {
+                    int searchStart = (int)address;
+                    int searchEnd = (int)address - 0x100;
+
+                    for (int addr = searchStart; addr > searchEnd; addr--)
+                    {
+                        byte[] b = game.ReadBytes((IntPtr)addr, 2);
+                        if (b[0] == 0x89 && b[1] == 0x35)
+                        {
+                            IntPtr g_engineAddr = (IntPtr)game.ReadValue<int>((IntPtr)addr + 2);
+
+                            EnginePointerFoundMessage(g_engineAddr);
+
+                            return g_engineAddr;
+                        }
+                    }
+                }
+            }
+
+            Dbg.Info("  => g_engine not found.");
+            return IntPtr.Zero;
+        }
+        else
+        {
+            return base.GetEnginePointer(game);
+        }
+    }
+        
+}
 
 public class Mohawk_Myst : ScummVM { }
 

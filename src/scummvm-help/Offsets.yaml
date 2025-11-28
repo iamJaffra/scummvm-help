@@ -1,5 +1,15 @@
 scummvm:
   32-bit:
+    1.8.0:
+      groovie:
+        _script:
+          offset: 0x58
+          _lastCursor:
+            offset: 0xD
+          _variables:
+            offset: 0x1A4
+          _videoRef:
+            offset: 0x784
     2.0.0:
       groovie:
         _script:

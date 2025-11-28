@@ -206,7 +206,7 @@ public class ScummVM
         return ver;
     }
 
-    protected IntPtr GetEnginePointer(Process game)
+    protected virtual IntPtr GetEnginePointer(Process game)
     {
         Dbg.Info("Scanning for g_engine...");
 
