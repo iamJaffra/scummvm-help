@@ -121,6 +121,8 @@ The following debug flags exist (set them in `startup{}`):
 
 ## ASLs that use ScummVM-Help
 
+##### Groovie
+- [The 7th Guest](https://raw.githubusercontent.com/iamJaffra/ASLs/refs/heads/main/The7thGuest.asl)
 ##### Mohawk
 - [Myst](https://raw.githubusercontent.com/iamJaffra/ASLs/refs/heads/main/Myst.asl)
 - [Riven](https://raw.githubusercontent.com/iamJaffra/ASLs/refs/heads/main/Riven.asl)
