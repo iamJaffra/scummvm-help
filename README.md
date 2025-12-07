@@ -123,6 +123,7 @@ The following debug flags exist (set them in `startup{}`):
 
 ##### Groovie
 - [The 7th Guest](https://raw.githubusercontent.com/iamJaffra/ASLs/refs/heads/main/The7thGuest.asl)
+- [The 11th Hour](https://raw.githubusercontent.com/iamJaffra/ASLs/refs/heads/main/The11thHour.asl)
 ##### Mohawk
 - [Myst](https://raw.githubusercontent.com/iamJaffra/ASLs/refs/heads/main/Myst.asl)
 - [Riven](https://raw.githubusercontent.com/iamJaffra/ASLs/refs/heads/main/Riven.asl)
