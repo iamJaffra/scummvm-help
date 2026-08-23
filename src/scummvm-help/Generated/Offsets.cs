@@ -3255,6 +3255,222 @@ namespace Generated
                             } }
                         } }
                     } },
+                { "2026.3.0", new Dictionary<string, object>
+                    {
+                    { "groovie", new Dictionary<string, object>
+                        {
+                        { "_script", new Dictionary<string, object>
+                            {
+                            { "offset", "0x74" },
+                            { "_lastCursor", new Dictionary<string, object>
+                                {
+                                { "offset", "0x9" }
+                                } },
+                            { "_variables", new Dictionary<string, object>
+                                {
+                                { "offset", "0x384" },
+                                { "inline", "true" }
+                                } },
+                            { "_videoRef", new Dictionary<string, object>
+                                {
+                                { "offset", "0x964" }
+                                } }
+                            } }
+                        } },
+                    { "mohawk_myst", new Dictionary<string, object>
+                        {
+                        { "_sound", new Dictionary<string, object>
+                            {
+                            { "offset", "0x88" },
+                            { "_effectId", new Dictionary<string, object>
+                                {
+                                { "offset", "0xC" }
+                                } }
+                            } },
+                        { "_gamestate", new Dictionary<string, object>
+                            {
+                            { "offset", "0x90" },
+                            { "_myst", new Dictionary<string, object>
+                                {
+                                { "offset", "0x1C" },
+                                { "inline", "true" }
+                                } },
+                            { "_globals", new Dictionary<string, object>
+                                {
+                                { "offset", "0x0" }
+                                } }
+                            } },
+                        { "_stack", new Dictionary<string, object>
+                            {
+                            { "offset", "0x94" },
+                            { "inline", "true" },
+                            { "_pointer", new Dictionary<string, object>
+                                {
+                                { "offset", "0x0" },
+                                { "_stackId", new Dictionary<string, object>
+                                    {
+                                    { "offset", "0x2C" }
+                                    } }
+                                } }
+                            } },
+                        { "_card", new Dictionary<string, object>
+                            {
+                            { "offset", "0xB8" },
+                            { "inline", "true" },
+                            { "_pointer", new Dictionary<string, object>
+                                {
+                                { "offset", "0x0" },
+                                { "_id", new Dictionary<string, object>
+                                    {
+                                    { "offset", "0x10" }
+                                    } }
+                                } }
+                            } }
+                        } },
+                    { "mohawk_riven", new Dictionary<string, object>
+                        {
+                        { "_video", new Dictionary<string, object>
+                            {
+                            { "offset", "0x80" }
+                            } },
+                        { "_card", new Dictionary<string, object>
+                            {
+                            { "offset", "0x2888" },
+                            { "_id", new Dictionary<string, object>
+                                {
+                                { "offset", "0x4" }
+                                } }
+                            } },
+                        { "_stack", new Dictionary<string, object>
+                            {
+                            { "offset", "0x288C" },
+                            { "_id", new Dictionary<string, object>
+                                {
+                                { "offset", "0x8" }
+                                } }
+                            } },
+                        { "_vars", new Dictionary<string, object>
+                            {
+                            { "offset", "0x28B4" },
+                            { "inline", "true" },
+                            { "_storage", new Dictionary<string, object>
+                                {
+                                { "offset", "0x184" },
+                                { "_key", new Dictionary<string, object>
+                                    {
+                                    { "offset", "0x4" }
+                                    } },
+                                { "_value", new Dictionary<string, object>
+                                    {
+                                    { "offset", "0x0" },
+                                    { "inline", "true" }
+                                    } }
+                                } },
+                            { "_mask", new Dictionary<string, object>
+                                {
+                                { "offset", "0x188" }
+                                } }
+                            } }
+                        } },
+                    { "sci", new Dictionary<string, object>
+                        {
+                        { "_gamestate", new Dictionary<string, object>
+                            {
+                            { "offset", "0x128" },
+                            { "variables", new Dictionary<string, object>
+                                {
+                                { "offset", "0xB0" },
+                                { "inline", "true" }
+                                } },
+                            { "_segMan", new Dictionary<string, object>
+                                {
+                                { "offset", "0x4" },
+                                { "_heap", new Dictionary<string, object>
+                                    {
+                                    { "offset", "0x4" },
+                                    { "inline", "true" },
+                                    { "_capacity", new Dictionary<string, object>
+                                        {
+                                        { "offset", "0x0" }
+                                        } },
+                                    { "_storage", new Dictionary<string, object>
+                                        {
+                                        { "offset", "0x8" },
+                                        { "_type", new Dictionary<string, object>
+                                            {
+                                            { "offset", "0x4" }
+                                            } },
+                                        { "_nr", new Dictionary<string, object>
+                                            {
+                                            { "offset", "0x8" }
+                                            } },
+                                        { "_localsBlock", new Dictionary<string, object>
+                                            {
+                                            { "offset", "0x104" },
+                                            { "_locals", new Dictionary<string, object>
+                                                {
+                                                { "offset", "0xC" },
+                                                { "inline", "true" },
+                                                { "_storage", new Dictionary<string, object>
+                                                    {
+                                                    { "offset", "0x8" }
+                                                    } }
+                                                } }
+                                            } },
+                                        { "_objects", new Dictionary<string, object>
+                                            {
+                                            { "offset", "0x108" },
+                                            { "inline", "true" },
+                                            { "_mask", new Dictionary<string, object>
+                                                {
+                                                { "offset", "0x61C" }
+                                                } },
+                                            { "_storage", new Dictionary<string, object>
+                                                {
+                                                { "offset", "0x618" },
+                                                { "_value", new Dictionary<string, object>
+                                                    {
+                                                    { "offset", "0x0" },
+                                                    { "inline", "true" },
+                                                    { "_name", new Dictionary<string, object>
+                                                        {
+                                                        { "offset", "0x4" }
+                                                        } },
+                                                    { "_variables", new Dictionary<string, object>
+                                                        {
+                                                        { "offset", "0x4C" },
+                                                        { "inline", "true" },
+                                                        { "_storage", new Dictionary<string, object>
+                                                            {
+                                                            { "offset", "0x8" }
+                                                            } }
+                                                        } }
+                                                    } }
+                                                } }
+                                            } }
+                                        } }
+                                    } }
+                                } }
+                            } }
+                        } },
+                    { "scumm", new Dictionary<string, object>
+                        {
+                        { "_scummVars", new Dictionary<string, object>
+                            {
+                            { "offset", "0x3520" }
+                            } },
+                        { "vm", new Dictionary<string, object>
+                            {
+                            { "offset", "0xD4" },
+                            { "inline", "true" },
+                            { "slot", new Dictionary<string, object>
+                                {
+                                { "offset", "0x14" },
+                                { "inline", "true" }
+                                } }
+                            } }
+                        } }
+                    } },
                 { "Myst 25th Anniversary (32-bit)", new Dictionary<string, object>
                     {
                     { "mohawk_myst", new Dictionary<string, object>
@@ -6370,6 +6586,222 @@ namespace Generated
                         { "_scummVars", new Dictionary<string, object>
                             {
                             { "offset", "0x3868" }
+                            } },
+                        { "vm", new Dictionary<string, object>
+                            {
+                            { "offset", "0x148" },
+                            { "inline", "true" },
+                            { "slot", new Dictionary<string, object>
+                                {
+                                { "offset", "0x14" },
+                                { "inline", "true" }
+                                } }
+                            } }
+                        } }
+                    } },
+                { "2026.3.0", new Dictionary<string, object>
+                    {
+                    { "groovie", new Dictionary<string, object>
+                        {
+                        { "_script", new Dictionary<string, object>
+                            {
+                            { "offset", "0xA8" },
+                            { "_lastCursor", new Dictionary<string, object>
+                                {
+                                { "offset", "0xD" }
+                                } },
+                            { "_variables", new Dictionary<string, object>
+                                {
+                                { "offset", "0x474" },
+                                { "inline", "true" }
+                                } },
+                            { "_videoRef", new Dictionary<string, object>
+                                {
+                                { "offset", "0xA58" }
+                                } }
+                            } }
+                        } },
+                    { "mohawk_myst", new Dictionary<string, object>
+                        {
+                        { "_sound", new Dictionary<string, object>
+                            {
+                            { "offset", "0xD0" },
+                            { "_effectId", new Dictionary<string, object>
+                                {
+                                { "offset", "0x10" }
+                                } }
+                            } },
+                        { "_gamestate", new Dictionary<string, object>
+                            {
+                            { "offset", "0xE0" },
+                            { "_myst", new Dictionary<string, object>
+                                {
+                                { "offset", "0x1C" },
+                                { "inline", "true" }
+                                } },
+                            { "_globals", new Dictionary<string, object>
+                                {
+                                { "offset", "0x0" }
+                                } }
+                            } },
+                        { "_stack", new Dictionary<string, object>
+                            {
+                            { "offset", "0xE8" },
+                            { "inline", "true" },
+                            { "_pointer", new Dictionary<string, object>
+                                {
+                                { "offset", "0x0" },
+                                { "_stackId", new Dictionary<string, object>
+                                    {
+                                    { "offset", "0x44" }
+                                    } }
+                                } }
+                            } },
+                        { "_card", new Dictionary<string, object>
+                            {
+                            { "offset", "0x128" },
+                            { "inline", "true" },
+                            { "_pointer", new Dictionary<string, object>
+                                {
+                                { "offset", "0x0" },
+                                { "_id", new Dictionary<string, object>
+                                    {
+                                    { "offset", "0x18" }
+                                    } }
+                                } }
+                            } }
+                        } },
+                    { "mohawk_riven", new Dictionary<string, object>
+                        {
+                        { "_video", new Dictionary<string, object>
+                            {
+                            { "offset", "0xC0" }
+                            } },
+                        { "_card", new Dictionary<string, object>
+                            {
+                            { "offset", "0x36B0" },
+                            { "_id", new Dictionary<string, object>
+                                {
+                                { "offset", "0x8" }
+                                } }
+                            } },
+                        { "_stack", new Dictionary<string, object>
+                            {
+                            { "offset", "0x36B8" },
+                            { "_id", new Dictionary<string, object>
+                                {
+                                { "offset", "0x10" }
+                                } }
+                            } },
+                        { "_vars", new Dictionary<string, object>
+                            {
+                            { "offset", "0x36F0" },
+                            { "inline", "true" },
+                            { "_storage", new Dictionary<string, object>
+                                {
+                                { "offset", "0x210" },
+                                { "_key", new Dictionary<string, object>
+                                    {
+                                    { "offset", "0x8" }
+                                    } },
+                                { "_value", new Dictionary<string, object>
+                                    {
+                                    { "offset", "0x0" },
+                                    { "inline", "true" }
+                                    } }
+                                } },
+                            { "_mask", new Dictionary<string, object>
+                                {
+                                { "offset", "0x218" }
+                                } }
+                            } }
+                        } },
+                    { "sci", new Dictionary<string, object>
+                        {
+                        { "_gamestate", new Dictionary<string, object>
+                            {
+                            { "offset", "0x200" },
+                            { "variables", new Dictionary<string, object>
+                                {
+                                { "offset", "0xF0" },
+                                { "inline", "true" }
+                                } },
+                            { "_segMan", new Dictionary<string, object>
+                                {
+                                { "offset", "0x8" },
+                                { "_heap", new Dictionary<string, object>
+                                    {
+                                    { "offset", "0x8" },
+                                    { "inline", "true" },
+                                    { "_capacity", new Dictionary<string, object>
+                                        {
+                                        { "offset", "0x0" }
+                                        } },
+                                    { "_storage", new Dictionary<string, object>
+                                        {
+                                        { "offset", "0x8" },
+                                        { "_type", new Dictionary<string, object>
+                                            {
+                                            { "offset", "0x8" }
+                                            } },
+                                        { "_nr", new Dictionary<string, object>
+                                            {
+                                            { "offset", "0xC" }
+                                            } },
+                                        { "_localsBlock", new Dictionary<string, object>
+                                            {
+                                            { "offset", "0x178" },
+                                            { "_locals", new Dictionary<string, object>
+                                                {
+                                                { "offset", "0x10" },
+                                                { "inline", "true" },
+                                                { "_storage", new Dictionary<string, object>
+                                                    {
+                                                    { "offset", "0x8" }
+                                                    } }
+                                                } }
+                                            } },
+                                        { "_objects", new Dictionary<string, object>
+                                            {
+                                            { "offset", "0x180" },
+                                            { "inline", "true" },
+                                            { "_mask", new Dictionary<string, object>
+                                                {
+                                                { "offset", "0x868" }
+                                                } },
+                                            { "_storage", new Dictionary<string, object>
+                                                {
+                                                { "offset", "0x860" },
+                                                { "_value", new Dictionary<string, object>
+                                                    {
+                                                    { "offset", "0x0" },
+                                                    { "inline", "true" },
+                                                    { "_name", new Dictionary<string, object>
+                                                        {
+                                                        { "offset", "0x8" }
+                                                        } },
+                                                    { "_variables", new Dictionary<string, object>
+                                                        {
+                                                        { "offset", "0x70" },
+                                                        { "inline", "true" },
+                                                        { "_storage", new Dictionary<string, object>
+                                                            {
+                                                            { "offset", "0x8" }
+                                                            } }
+                                                        } }
+                                                    } }
+                                                } }
+                                            } }
+                                        } }
+                                    } }
+                                } }
+                            } }
+                        } },
+                    { "scumm", new Dictionary<string, object>
+                        {
+                        { "_scummVars", new Dictionary<string, object>
+                            {
+                            { "offset", "0x37F8" }
                             } },
                         { "vm", new Dictionary<string, object>
                             {

@@ -20,6 +20,7 @@ Currently, every release version from `2.0.0` onwards is supported:
 - `2.8.1` `32-bit` and `64-bit`
 - `2.9.0` `32-bit` and `64-bit`
 - `2.9.1` `32-bit` and `64-bit`
+- `2026.3.0` `32-bit` and `64-bit`
 
 Full functionality cannot be guaranteed when playing on custom or nightly builds of ScummVM.
 
@@ -117,6 +118,22 @@ The following debug flags exist (set them in `startup{}`):
   ```
 
 *(Use [TraceSpy](https://github.com/smourier/TraceSpy) (recommended) or [DebugView](https://learn.microsoft.com/en-us/sysinternals/downloads/debugview) to view debug prints)*
+
+
+## Building
+
+The prebuilt helper is in `lib/scummvm-help`; drop it into `LiveSplit\Components`. To build it yourself:
+
+1. Copy `LiveSplit.Core.dll` from your LiveSplit install into `src/scummvm-help/`. It is referenced by `HintPath` and is not committed.
+2. Edit offsets in `src/scummvm-help/Offsets.yaml`. A pre-build step runs `src/DictGen` (needs the .NET 8 SDK) to regenerate `Generated/Offsets.cs` from it.
+3. Build `src/scummvm-help/scummvm-help.csproj` with MSBuild (.NET Framework 4.7.2). A post-build step renames the output to `lib/scummvm-help`.
+
+Notes:
+
+- `rename` will not overwrite, so delete any existing `src/scummvm-help/lib/scummvm-help` before rebuilding.
+- If your `LiveSplit.Core.dll` was built against a newer framework than the project (e.g. 4.8.1 vs 4.7.2) and you don't have that targeting pack, add `/p:ResolveAssemblyReferenceIgnoreTargetFrameworkAttributeVersionMismatch=true` to the MSBuild call.
+
+The offsets in `Offsets.yaml` are C++ struct member offsets and must match the official binary, which is built with MinGW GCC rather than MSVC. Dump them with `x86_64-w64-mingw32-g++` / `i686-w64-mingw32-g++` and the release's feature macros (e.g. `ENABLE_SCI32`); MSVC lays out inherited structs differently and produces wrong values. Building the dumper against the previous version's source should reproduce its offsets exactly for any struct that did not change.
 
 
 ## ASLs that use ScummVM-Help
