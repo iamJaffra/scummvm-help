@@ -20,7 +20,7 @@ Currently, every release version from `2.0.0` onwards is supported:
 - `2.8.1` `32-bit` and `64-bit`
 - `2.9.0` `32-bit` and `64-bit`
 - `2.9.1` `32-bit` and `64-bit`
-- `2026.3.0` `32-bit` and `64-bit`
+- `2026.3.0` `32-bit` and `64-bit` (Should be fully functional, only tested with Phantasmagoria)
 
 Full functionality cannot be guaranteed when playing on custom or nightly builds of ScummVM.
 
